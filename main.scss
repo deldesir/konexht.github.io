@@ -1,36 +1,160 @@
----
-# Front matter comment to ensure Jekyll properly reads file.
----
+--- # Front matter comment to ensure Jekyll properly reads file. --- $minima-brand-color: #2980b9;
 
-$body-color: {{ site.body_background_color }};
+$brand-color: {
+        {
+        site.brand_color | default: "#2980b9"
+    }
+}
 
-$header-image: "{{ site.cover_image }}";
-$device-color: "assets/{{ site.device_color }}.png";
+;
 
-$accent-color: {{ site.link_color }};
+$body-color: {
+        {
+        site.body_color | default: "#333333"
+    }
+}
 
-$header-title-color: {{ site.topbar_title_color }};
-$business-title-color: {{ site.business_title_color }};
-$business-price-color: {{ site.business_price_color }};
-$business-description-color: {{ site.business_description_color }};
+;
 
-$service-title-color: {{ site.service_title_color }};
-$service-text-color: {{ site.service_text_color }};
-$footer-text-color: {{ site.footer_text_color }};
+$background-color: {
+        {
+        site.background_color | default: "#ffffff"
+    }
+}
 
-$header_color: {{ site.topbar_color }};
-$header_transparency: {{ site.topbar_transparency }};
+;
 
-$image-overlay-color: {{ site.cover_overlay_color }};
-$image-overlay-transparency: {{ site.cover_overlay_transparency }};
+$header-image: "{{ site.cover_image | default: '' }}";
+$device-color: "assets/{{ site.device_color | default: 'black' }}.png";
 
-$service-icons-foreground-color: {{ site.service_icons_foreground_color }};
-$service-icons-background-color: {{ site.service_icons_background_color }};
+$accent-color: {
+        {
+        site.link_color | default: "#2980b9"
+    }
+}
 
-$social-icons-foreground-color: {{ site.social_icons_foreground_color }};
-$social-icons-background-color: {{ site.social_icons_background_color }};
+;
 
-@import 
-    "base",
-    "layout",
-    "github-markdown"
+$header-title-color: {
+        {
+        site.topbar_title_color | default: "#ffffff"
+    }
+}
+
+;
+
+$business-title-color: {
+        {
+        site.business_title_color | default: "#2c3e50"
+    }
+}
+
+;
+
+$business-price-color: {
+        {
+        site.business_price_color | default: "#27ae60"
+    }
+}
+
+;
+
+$business-description-color: {
+        {
+        site.business_description_color | default: "#7f8c8d"
+    }
+}
+
+;
+
+$service-title-color: {
+        {
+        site.service_title_color | default: "#2c3e50"
+    }
+}
+
+;
+
+$service-text-color: {
+        {
+        site.service_text_color | default: "#7f8c8d"
+    }
+}
+
+;
+
+$footer-text-color: {
+        {
+        site.footer_text_color | default: "#b2bec3"
+    }
+}
+
+;
+
+$header_color: {
+        {
+        site.topbar_color | default: "#2c3e50"
+    }
+}
+
+;
+
+$header_transparency: {
+        {
+        site.topbar_transparency | default: "0.9"
+    }
+}
+
+;
+
+$image-overlay-color: {
+        {
+        site.cover_overlay_color | default: "#000000"
+    }
+}
+
+;
+
+$image-overlay-transparency: {
+        {
+        site.cover_overlay_transparency | default: "0.5"
+    }
+}
+
+;
+
+$service-icons-foreground-color: {
+        {
+        site.service_icons_foreground_color | default: "#ffffff"
+    }
+}
+
+;
+
+$service-icons-background-color: {
+        {
+        site.service_icons_background_color | default: "#3498db"
+    }
+}
+
+;
+
+$social-icons-foreground-color: {
+        {
+        site.social_icons_foreground_color | default: "#ffffff"
+    }
+}
+
+;
+
+$social-icons-background-color: {
+        {
+        site.social_icons_background_color | default: "#34495e"
+    }
+}
+
+;
+
+@import "base",
+"layout",
+"github-markdown"

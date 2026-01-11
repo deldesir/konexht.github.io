@@ -2,9 +2,14 @@ title: KonexHT Digital Solutions
 description: "Empowering Haiti's digital future with premium writing, design, literacy, and strategic services."
 baseurl: ""
 url: "https://konexht.github.io"
-# plugins:
-#   - jekyll-feed
-#   - jekyll-seo-tag
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+collections:
+  solutions:
+    output: true
+    permalink: /solutions/:name/
 
 # Custom Variables
 whatsapp_number: "50931234567"
