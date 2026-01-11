@@ -1,0 +1,148 @@
+---
+layout: default
+title: Benchmark Mode
+---
+
+<section class="mb-24 -mt-8" x-data="{ favorites: JSON.parse(localStorage.getItem('konexht_favs') || '[]') }">
+    <div class="text-center mb-16">
+        <h1 class="text-6xl font-black tracking-tighter text-slate-900 mb-6 sm:text-7xl">
+            Strategy <span class="text-emerald-600">Workbench</span>
+        </h1>
+        <p class="text-xl text-slate-400 max-w-2xl mx-auto font-medium" x-text="t.compare"></p>
+    </div>
+
+    <template x-if="favorites.length === 0">
+        <div class="text-center py-32 bg-white rounded-[3rem] border-4 border-dashed border-slate-100">
+            <div class="w-20 h-20 bg-slate-50 rounded-3xl flex items-center justify-center mx-auto mb-6 text-slate-200">
+                <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
+                </svg>
+            </div>
+            <p class="text-slate-400 font-bold text-lg mb-8 uppercase tracking-widest">No strategies selected for
+                benchmark</p>
+            <a href="/"
+                class="inline-flex items-center gap-2 px-10 py-5 bg-emerald-600 text-white font-black rounded-2xl shadow-xl shadow-emerald-200 hover:bg-emerald-700 transition-all uppercase tracking-widest text-xs">
+                Back to Factory <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
+                    </path>
+                </svg>
+            </a>
+        </div>
+    </template>
+
+    <template x-if="favorites.length > 0">
+        <div class="space-y-12">
+            <!-- Table Container -->
+            <div class="overflow-x-auto bg-white rounded-[3rem] border border-slate-100 shadow-2xl">
+                <table class="min-w-full divide-y divide-slate-100">
+                    <thead class="bg-slate-50/50">
+                        <tr>
+                            <th
+                                class="px-10 py-8 text-left text-[10px] font-black text-slate-400 uppercase tracking-[0.3em]">
+                                Benchmark Metric</th>
+                            <template x-for="fav in favorites">
+                                <th class="px-10 py-8 text-left">
+                                    <div class="flex items-center justify-between">
+                                        <div>
+                                            <p class="text-[10px] font-black text-emerald-600 uppercase tracking-widest mb-1"
+                                                x-text="fav.category"></p>
+                                            <h4 class="text-lg font-black text-slate-900" x-text="fav.name"></h4>
+                                        </div>
+                                        <button
+                                            @click="favorites = favorites.filter(f => f.id !== fav.id); localStorage.setItem('konexht_favs', JSON.stringify(favorites))"
+                                            class="text-slate-300 hover:text-rose-500 transition-colors">
+                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M6 18L18 6M6 6l12 12"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </th>
+                            </template>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100">
+                        <!-- ROI Row -->
+                        <tr>
+                            <td class="px-10 py-8 text-xs font-black text-slate-500 uppercase tracking-widest bg-slate-50/20"
+                                x-text="'ROI Potential'"></td>
+                            <template x-for="fav in favorites">
+                                <td class="px-10 py-8">
+                                    <span
+                                        class="px-4 py-1.5 bg-emerald-50 text-emerald-600 rounded-full text-xs font-black uppercase tracking-widest"
+                                        x-text="fav.metrics.roi"></span>
+                                </td>
+                            </template>
+                        </tr>
+                        <!-- Effort Row -->
+                        <tr>
+                            <td class="px-10 py-8 text-xs font-black text-slate-500 uppercase tracking-widest bg-slate-50/20"
+                                x-text="t.hustle"></td>
+                            <template x-for="fav in favorites">
+                                <td class="px-10 py-8">
+                                    <div class="flex items-center gap-2">
+                                        <div class="h-2 w-12 bg-slate-100 rounded-full overflow-hidden">
+                                            <div class="h-full bg-amber-400"
+                                                :style="'width: ' + (fav.metrics.hustle * 20) + '%'"></div>
+                                        </div>
+                                        <span class="text-xs font-bold text-slate-600"
+                                            x-text="fav.metrics.effort"></span>
+                                    </div>
+                                </td>
+                            </template>
+                        </tr>
+                        <!-- Strengths Row -->
+                        <tr>
+                            <td class="px-10 py-8 text-xs font-black text-slate-500 uppercase tracking-widest bg-slate-50/20"
+                                x-text="t.strengths"></td>
+                            <template x-for="fav in favorites">
+                                <td class="px-10 py-8">
+                                    <p class="text-sm text-slate-600 font-medium leading-relaxed"
+                                        x-text="fav.strategy_analysis.strengths"></p>
+                                </td>
+                            </template>
+                        </tr>
+                        <!-- Risks Row -->
+                        <tr>
+                            <td class="px-10 py-8 text-xs font-black text-slate-500 uppercase tracking-widest bg-slate-50/20"
+                                x-text="t.risk"></td>
+                            <template x-for="fav in favorites">
+                                <td class="px-10 py-8">
+                                    <p class="text-sm text-rose-600 font-bold"
+                                        x-text="fav.strategy_analysis.market_risk"></p>
+                                </td>
+                            </template>
+                        </tr>
+                        <!-- Action Row -->
+                        <tr class="bg-slate-50/30">
+                            <td class="px-10 py-10 text-xs font-black text-slate-400 uppercase tracking-widest">Next
+                                Step</td>
+                            <template x-for="fav in favorites">
+                                <td class="px-10 py-10">
+                                    <a :href="'https://wa.me/{{ site.whatsapp_number }}?text=' + encodeURIComponent('ID:' + fav.id + '|REF:Workbench|LANG:' + lang)"
+                                        target="_blank"
+                                        class="inline-flex items-center justify-center gap-3 w-full py-4 bg-emerald-600 text-white font-black rounded-2xl shadow-lg shadow-emerald-200 hover:bg-emerald-700 transition-all uppercase tracking-widest text-[10px]">
+                                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                            <path
+                                                d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.025 3.284l-.549 2.008 2.056-.54c.939.533 1.891.827 2.969.828l.003.001c3.181 0 5.768-2.587 5.768-5.767 0-3.18-2.587-5.766-5.767-5.766zm3.39 8.161c-.146.411-.849.771-1.157.818-.309.049-.699.063-2.327-.571-2.079-.809-3.414-2.92-3.516-3.056-.103-.137-.764-.917-.764-1.749 0-.831.436-1.239.591-1.411.154-.171.334-.214.445-.214s.223.001.32.006c.108.005.253-.041.396.302.146.35.501 1.221.543 1.309.043.089.071.191.011.308-.06.117-.091.191-.182.296-.091.106-.192.235-.274.316-.091.091-.186.191-.08.373.106.183.471.777.1 1.092.3.265.556.488.823.666.267.178.508.291.812.439.304.149.334.126.459-.017.126-.143.541-.631.685-.846.143-.216.287-.183.483-.111s1.241.586 1.458.694c.217.108.361.161.414.254.053.093.053.539-.093.95zM12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.66 1.434 5.168L2 22l4.957-1.305C8.388 21.536 10.125 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z">
+                                            </path>
+                                        </svg>
+                                        Draft Build
+                                    </a>
+                                </td>
+                            </template>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="text-center">
+                <a href="/"
+                    class="text-slate-400 font-bold hover:text-emerald-600 transition-colors uppercase tracking-widest text-[10px]">
+                    ← Return to Solutions Discovery
+                </a>
+            </div>
+        </div>
+    </template>
+</section>

@@ -1,0 +1,26 @@
+<div class="services">
+
+    {% for service in site.services %}
+
+    {% if service.title %}
+    <div class="service">
+        <div>
+            <span class="fa-stack fa-1x">
+                <i class="iconBack fas fa-circle fa-stack-2x"></i>
+                <i class="iconTop fas fa-{{ service.fontawesome_icon_name }} fa-stack-1x"></i>
+            </span>
+        </div>
+        <div class="serviceText">
+            <h3>
+                {{ service.title }}
+            </h3>
+            <p>
+                {{ service.description }}
+            </p>
+        </div>
+    </div>
+    {% endif %}
+
+    {% endfor %}
+
+</div>

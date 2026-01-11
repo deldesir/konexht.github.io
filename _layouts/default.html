@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en' }}">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title | default: site.title }}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        [x-cloak] {
+            display: none !important;
+        }
+    </style>
+    <script>
+        window.I18N_DATA = {{ site.data.i18n | jsonify }};
+        window.SOLUTIONS_DATA = {{ site.data.solutions | jsonify }};
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emerald: {
+                            500: '#10b981',
+                            600: '#059669',
+                            700: '#047857',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gray-50 text-gray-900"
+    x-data="{ lang: 'kr', search: '', category: 'All', i18n: window.I18N_DATA, get t() { return this.i18n[this.lang]; } }">
+
+    <nav class="bg-white border-b border-gray-100 sticky top-0 z-50 py-4">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center gap-4">
+                    <img src="{{ site.baseurl }}/assets/konexlogo.png" alt="Konex Logo" class="h-10 w-auto">
+                    <div class="hidden sm:block">
+                        <h1 class="text-xl font-black text-slate-900 tracking-tight leading-none" x-text="t.title"></h1>
+                        <p class="text-slate-400 text-[10px] font-black uppercase tracking-[0.3em] mt-1"
+                            x-text="t.subtitle"></p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-6">
+                    <a href="{{ site.baseurl }}/"
+                        class="text-sm font-black text-slate-400 hover:text-emerald-600 transition-all uppercase tracking-widest">Home</a>
+                    <a href="{{ site.baseurl }}/#services"
+                        class="text-sm font-black text-slate-400 hover:text-emerald-600 transition-all uppercase tracking-widest">Services</a>
+                    <a href="{{ site.baseurl }}/factory/"
+                        class="px-6 py-2.5 bg-emerald-600 text-white text-[10px] font-black rounded-xl uppercase tracking-widest shadow-lg shadow-emerald-200 hover:bg-emerald-700 transition-all">Solution
+                        Factory</a>
+                    <div class="flex bg-slate-100 p-1 rounded-2xl border border-slate-200">
+                        <button @click="lang = 'en'"
+                            :class="lang === 'en' ? 'bg-white text-emerald-600 shadow-sm' : 'text-slate-400'"
+                            class="px-3 py-1.5 rounded-xl text-[10px] font-black transition-all">EN</button>
+                        <button @click="lang = 'kr'"
+                            :class="lang === 'kr' ? 'bg-white text-emerald-600 shadow-sm' : 'text-slate-400'"
+                            class="px-3 py-1.5 rounded-xl text-[10px] font-black transition-all">KR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        {{ content }}
+    </main>
+
+    <footer class="bg-white border-t border-gray-200 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-gray-500 text-sm">© 2026 KonexHT Solution Factory. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

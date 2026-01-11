@@ -1,0 +1,83 @@
+# KonexHT Solution Factory - Master Data
+# Schema refined for high-conversion marketing
+
+- id: "BIZ-ESCROW"
+  name: "Secure Escrow Agent"
+  category: "Business & Finance"
+  pitch: "Secure your trade. Money is held safely until both buyer and seller confirm delivery."
+  tier: "premium"
+  status: "Live"
+  metrics:
+    impact: 5
+    hustle: 4
+    roi: "High"
+    effort: "High"
+  tech: ["WhatsApp Text", "MonCash API", "State Machine"]
+  logic: "Buyer deposits -> Bot notifies Seller -> Seller delivers -> Both confirm -> Bot releases funds"
+  whatsapp_message: "START%20SEKI"
+  strategy_analysis:
+    strengths: "Eliminates fraud in peer-to-peer markets."
+    limitations: "Requires MonCash/Natcash API integration."
+    growth_path: "Expansion into dispute resolution services."
+    market_risk: "Competition from direct wallet-to-wallet transfers if trust is high."
+
+- id: "EDU-ELÈKOL"
+  name: "E-Lekòl Parent Portal"
+  category: "Education & Youth"
+  pitch: "Grades, attendance, and quarterly fees delivered directly to parents via WhatsApp."
+  tier: "standard"
+  status: "Beta"
+  metrics:
+    impact: 4
+    hustle: 2
+    roi: "Medium"
+    effort: "Medium"
+  tech: ["WhatsApp Text", "Database Lookup", "PDF Reports"]
+  logic: "Parent sends Student ID -> Bot verifies -> Bot fetches grades/fees -> Report sent"
+  whatsapp_message: "START%20LEKÒL"
+  strategy_analysis:
+    strengths: "Low friction for parents; improves fee collection."
+    limitations: "Requires accurate digitizing of school records."
+    growth_path: "Integration with remote registration and fee payments."
+    market_risk: "Low if implemented as a mandatory communication tool for schools."
+
+- id: "AGRI-PEST"
+  name: "AI Pest Identifier"
+  category: "Agriculture & Environment"
+  pitch: "Snap a photo of a sick plant; receive instant identification and treatment advice."
+  tier: "premium"
+  status: "Research"
+  metrics:
+    impact: 5
+    hustle: 5
+    roi: "High"
+    effort: "High"
+  tech: ["Photo Intake", "LLM Analysis", "Audio Guidance"]
+  logic: "Farmer sends photo -> AI analyzes -> Diagnosis returned in Kreyòl voice note"
+  whatsapp_message: "START%20PLANTO"
+  strategy_analysis:
+    strengths: "Saves crops instantly; provides expert advice 24/7."
+    limitations: "Depends on high-quality camera and data connection for photos."
+    growth_path: "Connecting farmers with vetted pesticide vendors."
+    market_risk: "Accuracy of AI feedback must be vetted by local agronomists."
+
+# ... (Adding more solutions in batches)
+- id: "BIZ-ESCROW-PREMIUM"
+  name: "Verified Escrow Agent (Verified Hub)"
+  category: "Business & Finance"
+  pitch: "Secure transaction hub. Protects both buyer and seller in high-value trades."
+  tier: "premium"
+  status: "Live"
+  metrics:
+    impact: 5
+    hustle: 4
+    roi: "High"
+    effort: "High"
+  tech: ["WhatsApp Text", "MonCash Gateway", "Security Verification"]
+  logic: "Payment -> Verified Hold -> Delivery Confirmation -> Release"
+  whatsapp_message: "START%20SEKI"
+  strategy_analysis:
+    strengths: "Market-leading security for Haitian P2P trade."
+    limitations: "Requires KYC verification for high-volume users."
+    growth_path: "Expansion into automated contract generation."
+    market_risk: "Trust in centralized hub is critical."

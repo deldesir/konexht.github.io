@@ -1,0 +1,36 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+$body-color: {{ site.body_background_color }};
+
+$header-image: "{{ site.cover_image }}";
+$device-color: "assets/{{ site.device_color }}.png";
+
+$accent-color: {{ site.link_color }};
+
+$header-title-color: {{ site.topbar_title_color }};
+$business-title-color: {{ site.business_title_color }};
+$business-price-color: {{ site.business_price_color }};
+$business-description-color: {{ site.business_description_color }};
+
+$service-title-color: {{ site.service_title_color }};
+$service-text-color: {{ site.service_text_color }};
+$footer-text-color: {{ site.footer_text_color }};
+
+$header_color: {{ site.topbar_color }};
+$header_transparency: {{ site.topbar_transparency }};
+
+$image-overlay-color: {{ site.cover_overlay_color }};
+$image-overlay-transparency: {{ site.cover_overlay_transparency }};
+
+$service-icons-foreground-color: {{ site.service_icons_foreground_color }};
+$service-icons-background-color: {{ site.service_icons_background_color }};
+
+$social-icons-foreground-color: {{ site.social_icons_foreground_color }};
+$social-icons-background-color: {{ site.social_icons_background_color }};
+
+@import 
+    "base",
+    "layout",
+    "github-markdown"

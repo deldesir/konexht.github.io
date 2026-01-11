@@ -1,0 +1,291 @@
+---
+layout: default
+title: Home
+---
+
+<section class="mb-16 -mt-8">
+    <!-- Hero Stats Bar -->
+    <div class="bg-emerald-900 -mx-6 lg:-mx-8 py-4 mb-16 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 flex flex-wrap gap-10 justify-center md:justify-start">
+            <div class="flex items-center gap-3">
+                <span class="text-2xl font-black text-white">{{ site.data.solutions.size }}</span>
+                <span class="text-[10px] font-black text-emerald-300 uppercase tracking-widest">Solutions</span>
+            </div>
+            <div class="flex items-center gap-3 border-l border-white/10 pl-10">
+                <span class="text-2xl font-black text-emerald-400">100%</span>
+                <span class="text-[10px] font-black text-slate-300 uppercase tracking-widest">WhatsApp Linear</span>
+            </div>
+            <div class="flex items-center gap-3 border-l border-white/10 pl-10">
+                <span class="text-2xl font-black text-amber-400">5/5</span>
+                <span class="text-[10px] font-black text-slate-300 uppercase tracking-widest">Lead Impact</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mb-16">
+        <h1 class="text-6xl font-black tracking-tighter text-slate-900 sm:text-7xl mb-4">
+            <span x-text="t.title"></span> <span class="text-emerald-600" x-text="t.subtitle"></span>
+        </h1>
+        <p class="text-xl text-slate-400 max-w-2xl mx-auto font-medium" x-text="t.search_placeholder"></p>
+    </div>
+
+    <!-- Search and Filter Bar -->
+    <div class="flex flex-col md:flex-row gap-4 mb-12">
+        <div class="relative flex-grow">
+            <span class="absolute inset-y-0 left-0 pl-8 flex items-center text-slate-300">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+            </span>
+            <input type="text" x-model="search" :placeholder="t.search_placeholder"
+                class="block w-full pl-20 pr-8 py-6 border-2 border-slate-100 rounded-[2.5rem] focus:ring-emerald-500 focus:border-emerald-500 text-xl font-bold shadow-sm bg-white transition-all">
+        </div>
+        <div class="md:w-72 relative">
+            <select x-model="category"
+                class="block w-full py-6 px-10 border-2 border-slate-100 bg-white rounded-[2.5rem] focus:ring-emerald-500 focus:border-emerald-500 text-lg font-bold text-slate-600 appearance-none shadow-sm cursor-pointer hover:border-emerald-200 transition-all outline-none">
+                <option value="All">All Categories</option>
+                {% assign categories = site.data.solutions | map: 'category' | uniq %}
+                {% for cat in categories %}
+                <option value="{{ cat }}">{{ cat }}</option>
+                {% endfor %}
+            </select>
+            <div class="absolute inset-y-0 right-8 flex items-center pointer-events-none text-slate-300">
+                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Discovery Grid -->
+<div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4" x-data="{ 
+        favorites: JSON.parse(localStorage.getItem('konexht_favs') || '[]'), 
+        activeSolution: null, 
+        showModal: false,
+        modalTab: 'overview',
+        toggleFav(sol) { 
+            if (this.favorites.find(f => f.id === sol.id)) { 
+                this.favorites = this.favorites.filter(f => f.id !== sol.id); 
+            } else if (this.favorites.length < 3) { 
+                this.favorites.push(sol); 
+            } else { 
+                alert('You can only compare 3 solutions at a time.'); 
+            } 
+            localStorage.setItem('konexht_favs', JSON.stringify(this.favorites)); 
+        } 
+    }">
+    {% for solution in site.data.solutions %}
+    <div @click="activeSolution = {{ solution | jsonify | escape }}; showModal = true; modalTab = 'overview'"
+        class="group relative bg-white rounded-[2.5rem] border-2 border-slate-50 p-8 shadow-sm transition-all hover:shadow-2xl hover:-translate-y-2 hover:border-emerald-100 flex flex-col cursor-pointer"
+        x-show="(category === 'All' || category === '{{ solution.category }}') && ('{{ solution.name }} {{ solution.id }} {{ solution.pitch }}'.toLowerCase().includes(search.toLowerCase()))"
+        x-transition>
+        <!-- Favorite Button -->
+        <button @click.stop="toggleFav({{ solution | jsonify | escape }})"
+            class="absolute top-6 right-6 p-3 rounded-2xl transition-all z-20"
+            :class="favorites.find(f => f.id === '{{ solution.id }}') ? 'bg-emerald-600 text-white shadow-lg' : 'bg-slate-50 text-slate-300 hover:text-emerald-600'">
+            <svg class="h-5 w-5" :fill="favorites.find(f => f.id === '{{ solution.id }}') ? 'currentColor' : 'none'"
+                stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.382-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z">
+                </path>
+            </svg>
+        </button>
+
+        <div class="mb-6">
+            <span
+                class="px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest bg-emerald-50 text-emerald-600">
+                {{ solution.category }}
+            </span>
+        </div>
+
+        <div class="flex-grow">
+            <h3
+                class="text-xl font-bold text-slate-900 mb-4 group-hover:text-emerald-600 transition-colors leading-tight">
+                {{ solution.name }}
+            </h3>
+            <p class="text-slate-400 text-sm font-medium line-clamp-3 mb-8">
+                {{ solution.pitch }}
+            </p>
+        </div>
+
+        <div class="pt-6 border-t border-slate-50 flex items-center justify-between">
+            <span
+                class="text-emerald-600 text-xs font-black uppercase tracking-widest hover:text-emerald-700 underline decoration-2 underline-offset-4">
+                Blueprint
+            </span>
+            <a href="{{ site.baseurl }}/solutions/{{ solution.id | downcase }}/" @click.stop
+                class="flex items-center gap-1.5 overflow-hidden group/link z-20">
+                <span
+                    class="text-[10px] font-black text-slate-300 uppercase truncate group-hover/link:text-emerald-600 transition-colors">Details</span>
+                <span class="text-xs font-black text-emerald-600">→</span>
+            </a>
+        </div>
+    </div>
+    {% endfor %}
+
+    <!-- Comparison Workbench Overlay -->
+    <div x-show="favorites.length > 0"
+        class="fixed bottom-12 left-1/2 -translate-x-1/2 z-[60] w-full max-w-4xl px-6 animate-in slide-in-from-bottom-20"
+        x-cloak>
+        <div
+            class="bg-slate-900 text-white p-8 rounded-[3rem] shadow-2xl border border-white/10 ring-8 ring-emerald-500/10 flex items-center justify-between gap-8">
+            <div class="flex items-center gap-6">
+                <div
+                    class="w-14 h-14 bg-emerald-600 rounded-[1.5rem] flex items-center justify-center shadow-lg shadow-emerald-500/20">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
+                    </svg>
+                </div>
+                <div>
+                    <p class="text-[10px] font-black text-emerald-400 uppercase tracking-[0.2em] mb-1"
+                        x-text="t.compare"></p>
+                    <p class="text-lg font-bold"><span x-text="favorites.length"></span> Strategies Selected</p>
+                </div>
+            </div>
+            <div class="flex gap-4">
+                <button @click="favorites = []; localStorage.removeItem('konexht_favs')"
+                    class="px-8 py-4 bg-white/5 hover:bg-white/10 rounded-2xl text-xs font-black uppercase tracking-widest transition-all">
+                    Reset
+                </button>
+                <a href="/compare"
+                    class="px-10 py-4 bg-emerald-600 hover:bg-emerald-500 rounded-2xl text-xs font-black uppercase tracking-widest transition-all shadow-xl shadow-emerald-600/40 flex items-center gap-2">
+                    Open Workbench <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enhanced Detail Modal -->
+    <div x-show="showModal"
+        class="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-md" x-cloak>
+        <div class="bg-white rounded-[3rem] w-full max-w-3xl shadow-2xl overflow-hidden border border-white/20 relative"
+            @click.away="showModal = false">
+            <template x-if="activeSolution">
+                <div>
+                    <!-- Modal Header -->
+                    <div class="bg-emerald-900 p-10 text-white relative">
+                        <button @click="showModal = false"
+                            class="absolute right-8 top-8 p-3 hover:bg-white/10 rounded-full transition-all">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                        <div class="flex items-center gap-4 mb-4">
+                            <span class="text-emerald-300 text-[10px] font-black uppercase tracking-[0.3em]"
+                                x-text="activeSolution.category"></span>
+                            <span class="bg-white/10 px-3 py-1 rounded-lg text-[10px] font-mono"
+                                x-text="'#' + activeSolution.id"></span>
+                        </div>
+                        <h2 class="text-4xl font-black leading-tight" x-text="activeSolution.name"></h2>
+                    </div>
+
+                    <!-- Modal Tabs -->
+                    <div class="flex border-b border-slate-100 bg-slate-50/50 px-10">
+                        <button @click="modalTab = 'overview'"
+                            :class="modalTab === 'overview' ? 'border-emerald-600 text-emerald-600' : 'border-transparent text-slate-400'"
+                            class="px-8 py-5 text-xs font-black uppercase tracking-widest border-b-4 transition-all"
+                            x-text="t.overview"></button>
+                        <button @click="modalTab = 'blueprint'"
+                            :class="modalTab === 'blueprint' ? 'border-emerald-600 text-emerald-600' : 'border-transparent text-slate-400'"
+                            class="px-8 py-5 text-xs font-black uppercase tracking-widest border-b-4 transition-all"
+                            x-text="t.blueprint"></button>
+                        <button @click="modalTab = 'analysis'"
+                            :class="modalTab === 'analysis' ? 'border-emerald-600 text-emerald-600' : 'border-transparent text-slate-400'"
+                            class="px-8 py-5 text-xs font-black uppercase tracking-widest border-b-4 transition-all"
+                            x-text="t.analysis"></button>
+                    </div>
+
+                    <!-- Tab Content -->
+                    <div class="p-10 max-h-[50vh] overflow-y-auto bg-white">
+                        <div x-show="modalTab === 'overview'" class="space-y-8">
+                            <div>
+                                <h4 class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-4">
+                                    Marketing Pitch</h4>
+                                <p class="text-2xl text-slate-800 font-bold leading-relaxed italic"
+                                    x-text="'\'' + activeSolution.pitch + '\''"></p>
+                            </div>
+                            <div class="flex flex-wrap gap-3">
+                                <template x-for="mode in (activeSolution.tech || [])">
+                                    <span
+                                        class="px-4 py-2 bg-emerald-50 text-emerald-700 border border-emerald-100 rounded-xl text-[10px] font-black uppercase"
+                                        x-text="mode"></span>
+                                </template>
+                            </div>
+                        </div>
+
+                        <div x-show="modalTab === 'blueprint'"
+                            class="bg-slate-900 rounded-[2.5rem] p-8 shadow-2xl border border-white/5">
+                            <h4
+                                class="text-[10px] font-black text-emerald-400 uppercase tracking-widest mb-8 flex items-center gap-3">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z">
+                                    </path>
+                                </svg>
+                                WhatsApp Flow Logic
+                            </h4>
+                            <div class="space-y-5">
+                                <template x-for="(bubble, index) in activeSolution.logic.split('->')">
+                                    <div class="flex" :class="index % 2 === 0 ? 'justify-start' : 'justify-end'">
+                                        <div class="max-w-[85%] px-5 py-3 rounded-2xl text-sm font-medium shadow-sm"
+                                            :class="index % 2 === 0 ? 'bg-white text-slate-800 rounded-bl-none' : 'bg-emerald-100 text-emerald-900 rounded-br-none'"
+                                            x-text="bubble.trim()"></div>
+                                    </div>
+                                </template>
+                            </div>
+                        </div>
+
+                        <div x-show="modalTab === 'analysis'" class="grid grid-cols-2 gap-6">
+                            <div class="p-6 bg-emerald-50 rounded-3xl border border-emerald-100">
+                                <h5 class="text-[10px] font-black text-emerald-700 uppercase mb-3" x-text="t.strengths">
+                                </h5>
+                                <p class="text-xs text-emerald-900 font-bold leading-relaxed"
+                                    x-text="activeSolution.strategy_analysis.strengths"></p>
+                            </div>
+                            <div class="p-6 bg-rose-50 rounded-3xl border border-rose-100">
+                                <h5 class="text-[10px] font-black text-rose-700 uppercase mb-3" x-text="t.limitations">
+                                </h5>
+                                <p class="text-xs text-rose-900 font-bold leading-relaxed"
+                                    x-text="activeSolution.strategy_analysis.limitations"></p>
+                            </div>
+                            <div class="p-6 bg-blue-50 rounded-3xl border border-blue-100">
+                                <h5 class="text-[10px] font-black text-blue-700 uppercase mb-3" x-text="t.growth"></h5>
+                                <p class="text-xs text-blue-900 font-bold leading-relaxed"
+                                    x-text="activeSolution.strategy_analysis.growth_path"></p>
+                            </div>
+                            <div class="p-6 bg-amber-50 rounded-3xl border border-amber-100">
+                                <h5 class="text-[10px] font-black text-amber-700 uppercase mb-3" x-text="t.risk"></h5>
+                                <p class="text-xs text-amber-900 font-bold leading-relaxed"
+                                    x-text="activeSolution.strategy_analysis.market_risk"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal Footer -->
+                    <div class="p-10 border-t border-slate-100 bg-slate-50 flex gap-6">
+                        <button @click="showModal = false"
+                            class="flex-grow py-5 bg-white border-2 border-slate-100 text-slate-400 font-black rounded-2xl hover:bg-slate-100 transition-all uppercase tracking-widest text-xs"
+                            x-text="t.close"></button>
+                        <a :href="'https://wa.me/{{ site.whatsapp_number }}?text=' + encodeURIComponent('ID:' + activeSolution.id + '|REF:Factory|LANG:' + lang)"
+                            target="_blank"
+                            class="flex-grow py-5 bg-emerald-600 text-white font-black rounded-2xl flex items-center justify-center gap-3 shadow-xl shadow-emerald-200 hover:bg-emerald-700 hover:scale-[1.02] transition-all uppercase tracking-widest text-xs">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.025 3.284l-.549 2.008 2.056-.54c.939.533 1.891.827 2.969.828l.003.001c3.181 0 5.768-2.587 5.768-5.767 0-3.18-2.587-5.766-5.767-5.766zm3.39 8.161c-.146.411-.849.771-1.157.818-.309.049-.699.063-2.327-.571-2.079-.809-3.414-2.92-3.516-3.056-.103-.137-.764-.917-.764-1.749 0-.831.436-1.239.591-1.411.154-.171.334-.214.445-.214s.223.001.32.006c.108.005.253-.041.396.302.146.35.501 1.221.543 1.309.043.089.071.191.011.308-.06.117-.091.191-.182.296-.091.106-.192.235-.274.316-.091.091-.186.191-.08.373.106.183.471.777.1 1.092.3.265.556.488.823.666.267.178.508.291.812.439.304.149.334.126.459-.017.126-.143.541-.631.685-.846.143-.216.287-.183.483-.111s1.241.586 1.458.694c.217.108.361.161.414.254.053.093.053.539-.093.95zM12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.66 1.434 5.168L2 22l4.957-1.305C8.388 21.536 10.125 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z">
+                                </path>
+                            </svg>
+                            <span x-text="t.launch"></span>
+                        </a>
+                    </div>
+                </div>
+            </template>
+        </div>
+    </div>
+</div>

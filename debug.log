@@ -1,0 +1,10 @@
+🚀 Building KonexHT Brand Portal (Isolated Mode)...
+/usr/lib/ruby/vendor_ruby/rubygems/specification.rb:1421:in `block in activate_dependencies': Could not find 'addressable' (~> 2.4) among 138 total gem(s) (Gem::MissingSpecError)
+Checked in 'GEM_PATH=/root/konexht-site/_gems' at: /root/konexht-site/_gems/specifications/jekyll-4.4.1.gemspec, execute `gem env` for more information
+	from /usr/lib/ruby/vendor_ruby/rubygems/specification.rb:1407:in `each'
+	from /usr/lib/ruby/vendor_ruby/rubygems/specification.rb:1407:in `activate_dependencies'
+	from /usr/lib/ruby/vendor_ruby/rubygems/specification.rb:1389:in `activate'
+	from /usr/lib/ruby/vendor_ruby/rubygems.rb:290:in `block in activate_bin_path'
+	from /usr/lib/ruby/vendor_ruby/rubygems.rb:289:in `synchronize'
+	from /usr/lib/ruby/vendor_ruby/rubygems.rb:289:in `activate_bin_path'
+	from /root/konexht-site/_gems/bin/jekyll:25:in `<main>'

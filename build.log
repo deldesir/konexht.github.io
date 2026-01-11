@@ -1,0 +1,109 @@
++ unset GEM_HOME
++ unset GEM_PATH
++ unset RUBYLIB
+++ pwd
++ export ROOT_DIR=/root/konexht-portal
++ ROOT_DIR=/root/konexht-portal
++ export GEM_HOME=/root/konexht-portal/_local_gems
++ GEM_HOME=/root/konexht-portal/_local_gems
++ export PATH=/root/konexht-portal/_local_gems/bin:/root/konexht-portal/_local_gems/bin:/root/konexht-site/_gems/bin:/root/konexht-site/_gems/bin:/root/konexht-site/_gems/bin:/root/konexht-site/_gems/bin:/root/konexht-site/_gems/bin:/root/konexht-site/_gems/bin:/tmp/konexht-site/_gems/bin:/tmp/konexht-site/_gems/bin:/tmp/konexht-site/_gems/bin:/root/.antigravity-server/bin/94f91bc110994badc7c086033db813077a5226af/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/root/.local/bin:/root/.local/bin:/root/.antigravity-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts:/root/.local/bin
++ PATH=/root/konexht-portal/_local_gems/bin:/root/konexht-portal/_local_gems/bin:/root/konexht-site/_gems/bin:/root/konexht-site/_gems/bin:/root/konexht-site/_gems/bin:/root/konexht-site/_gems/bin:/root/konexht-site/_gems/bin:/root/konexht-site/_gems/bin:/tmp/konexht-site/_gems/bin:/tmp/konexht-site/_gems/bin:/tmp/konexht-site/_gems/bin:/root/.antigravity-server/bin/94f91bc110994badc7c086033db813077a5226af/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/root/.local/bin:/root/.local/bin:/root/.antigravity-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts:/root/.local/bin
++ echo '🧹 Cleaned Environment'
+🧹 Cleaned Environment
++ echo '📂 GEM_HOME: /root/konexht-portal/_local_gems'
+📂 GEM_HOME: /root/konexht-portal/_local_gems
++ command -v bundle
++ mkdir -p .bundle
++ cat
++ echo '📥 Installing Dependencies...'
+📥 Installing Dependencies...
++ bundle install
+Don't run Bundler as root. Installing your bundle as root will break this application for
+all non-root users on this machine.
+Bundle complete! 2 Gemfile dependencies, 35 gems now installed.
+Bundled gems are installed into `./vendor/bundle`
++ echo '🚀 Building with Jekyll...'
+🚀 Building with Jekyll...
++ bundle exec jekyll build --destination _site
+Configuration file: /root/konexht-portal/_config.yml
+            Source: /root/konexht-portal
+       Destination: /root/konexht-portal/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+[31mError: Expected expression.
+  ╷
+1 │ $body-color: ;
+  │              ^
+  ╵
+  /root/konexht-portal/main.scss 1:14  root stylesheet [0m
+[31m  Conversion error: Jekyll::Converters::Scss encountered an error while converting 'main.scss':[0m
+[31m                    Expected expression.[0m
+[31m                    ------------------------------------------------[0m
+[31m      Jekyll 4.4.1   Please append `--trace` to the `build` command [0m
+[31m                     for any additional information or backtrace. [0m
+[31m                    ------------------------------------------------[0m
+/root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/jekyll-sass-converter-3.1.0/lib/jekyll/converters/scss.rb:181:in `rescue in convert': Expected expression. (Jekyll::Converters::Scss::SyntaxError)
+
+          raise SyntaxError, e.message
+                ^^^^^^^^^^^^^^^^^^^^^^
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/jekyll-sass-converter-3.1.0/lib/jekyll/converters/scss.rb:162:in `convert'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/renderer.rb:105:in `block in convert'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/renderer.rb:104:in `each'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/renderer.rb:104:in `reduce'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/renderer.rb:104:in `convert'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/renderer.rb:84:in `render_document'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/renderer.rb:63:in `run'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/site.rb:572:in `render_regenerated'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/site.rb:564:in `block in render_pages'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/site.rb:563:in `each'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/site.rb:563:in `render_pages'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/site.rb:211:in `render'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/site.rb:80:in `process'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/command.rb:28:in `process_site'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/commands/build.rb:65:in `build'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/commands/build.rb:36:in `process'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/command.rb:91:in `block in process_with_graceful_fail'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/command.rb:91:in `each'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/command.rb:91:in `process_with_graceful_fail'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/commands/build.rb:18:in `block (2 levels) in init_with_program'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/mercenary-0.4.0/lib/mercenary/command.rb:221:in `block in execute'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/mercenary-0.4.0/lib/mercenary/command.rb:221:in `each'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/mercenary-0.4.0/lib/mercenary/command.rb:221:in `execute'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/mercenary-0.4.0/lib/mercenary/program.rb:44:in `go'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/mercenary-0.4.0/lib/mercenary.rb:21:in `program'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/exe/jekyll:15:in `<top (required)>'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/bin/jekyll:25:in `load'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/bin/jekyll:25:in `<main>'
+/root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/sass-embedded-1.97.2-x86_64-linux-gnu/lib/sass/compiler/host.rb:86:in `compile_request': Expected expression. (Sass::CompileError)
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/sass-embedded-1.97.2-x86_64-linux-gnu/lib/sass/compiler.rb:172:in `compile_string'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/sass-embedded-1.97.2-x86_64-linux-gnu/lib/sass/embedded.rb:37:in `compile_string'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/jekyll-sass-converter-3.1.0/lib/jekyll/converters/scss.rb:163:in `convert'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/renderer.rb:105:in `block in convert'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/renderer.rb:104:in `each'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/renderer.rb:104:in `reduce'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/renderer.rb:104:in `convert'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/renderer.rb:84:in `render_document'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/renderer.rb:63:in `run'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/site.rb:572:in `render_regenerated'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/site.rb:564:in `block in render_pages'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/site.rb:563:in `each'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/site.rb:563:in `render_pages'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/site.rb:211:in `render'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/site.rb:80:in `process'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/command.rb:28:in `process_site'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/commands/build.rb:65:in `build'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/commands/build.rb:36:in `process'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/command.rb:91:in `block in process_with_graceful_fail'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/command.rb:91:in `each'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/command.rb:91:in `process_with_graceful_fail'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/lib/jekyll/commands/build.rb:18:in `block (2 levels) in init_with_program'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/mercenary-0.4.0/lib/mercenary/command.rb:221:in `block in execute'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/mercenary-0.4.0/lib/mercenary/command.rb:221:in `each'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/mercenary-0.4.0/lib/mercenary/command.rb:221:in `execute'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/mercenary-0.4.0/lib/mercenary/program.rb:44:in `go'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/mercenary-0.4.0/lib/mercenary.rb:21:in `program'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/gems/jekyll-4.4.1/exe/jekyll:15:in `<top (required)>'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/bin/jekyll:25:in `load'
+	from /root/konexht-portal/vendor/bundle/ruby/3.3.0/bin/jekyll:25:in `<main>'
++ echo '✅ Build Complete!'
+✅ Build Complete!
