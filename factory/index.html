@@ -60,29 +60,14 @@ title: Home
 </section>
 
 <!-- Discovery Grid -->
-<div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4" x-data="{ 
-        favorites: JSON.parse(localStorage.getItem('konexht_favs') || '[]'), 
-        activeSolution: null, 
-        showModal: false,
-        modalTab: 'overview',
-        toggleFav(sol) { 
-            if (this.favorites.find(f => f.id === sol.id)) { 
-                this.favorites = this.favorites.filter(f => f.id !== sol.id); 
-            } else if (this.favorites.length < 3) { 
-                this.favorites.push(sol); 
-            } else { 
-                alert('You can only compare 3 solutions at a time.'); 
-            } 
-            localStorage.setItem('konexht_favs', JSON.stringify(this.favorites)); 
-        } 
-    }">
+<div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
     {% for solution in site.data.solutions %}
-    <div @click="activeSolution = {{ solution | jsonify | escape }}; showModal = true; modalTab = 'overview'"
+    <div @click="setActive({{ forloop.index0 }})"
         class="group relative bg-white rounded-[2.5rem] border-2 border-slate-50 p-8 shadow-sm transition-all hover:shadow-2xl hover:-translate-y-2 hover:border-emerald-100 flex flex-col cursor-pointer"
         x-show="(category === 'All' || category === '{{ solution.category }}') && ('{{ solution.name }} {{ solution.id }} {{ solution.pitch }}'.toLowerCase().includes(search.toLowerCase()))"
         x-transition>
         <!-- Favorite Button -->
-        <button @click.stop="toggleFav({{ solution | jsonify | escape }})"
+        <button @click.stop="toggleFav(solutions[{{ forloop.index0 }}])"
             class="absolute top-6 right-6 p-3 rounded-2xl transition-all z-20"
             :class="favorites.find(f => f.id === '{{ solution.id }}') ? 'bg-emerald-600 text-white shadow-lg' : 'bg-slate-50 text-slate-300 hover:text-emerald-600'">
             <svg class="h-5 w-5" :fill="favorites.find(f => f.id === '{{ solution.id }}') ? 'currentColor' : 'none'"

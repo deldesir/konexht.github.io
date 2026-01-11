@@ -38,7 +38,13 @@ ruby generate_pages.rb
 echo "🏗️  Jekyll Build..."
 bundle exec jekyll build --destination _site --trace
 
-# 6. Update preview symlink
+# Verification
+if [ ! -d "_site" ]; then
+    echo "❌ ERROR: _site directory was not generated!"
+    exit 1
+fi
+
+# 7. Symlink for local preview
 rm -rf /tmp/konexht_preview
 ln -s "$(pwd)/_site" /tmp/konexht_preview
 

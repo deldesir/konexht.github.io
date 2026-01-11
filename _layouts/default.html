@@ -25,9 +25,8 @@
                 extend: {
                     colors: {
                         emerald: {
-                            500: '#10b981',
                             600: '#059669',
-                            700: '#047857',
+                            900: '#064e3b'
                         }
                     }
                 }
@@ -36,8 +35,41 @@
     </script>
 </head>
 
-<body class="bg-gray-50 text-gray-900"
-    x-data="{ lang: 'kr', search: '', category: 'All', i18n: window.I18N_DATA, get t() { return this.i18n[this.lang]; } }">
+<body class="bg-gray-50 text-gray-900" x-data="{ 
+        lang: 'kr', 
+        search: '', 
+        category: 'All', 
+        solutions: [], 
+        activeSolution: null, 
+        showModal: false, 
+        modalTab: 'overview', 
+        favorites: JSON.parse(localStorage.getItem('konexht_favs') || '[]'), 
+        i18n: window.I18N_DATA, 
+        get t() { return this.i18n[this.lang]; },
+        async init() {
+            try {
+                const response = await fetch('{{ site.baseurl }}/solutions.json');
+                this.solutions = await response.json();
+            } catch (e) {
+                console.error('Failed to load solutions:', e);
+            }
+        },
+        toggleFav(sol) { 
+            if (this.favorites.find(f => f.id === sol.id)) { 
+                this.favorites = this.favorites.filter(f => f.id !== sol.id); 
+            } else if (this.favorites.length < 3) { 
+                this.favorites.push(sol); 
+            } else { 
+                alert('You can only compare 3 solutions at a time.'); 
+            } 
+            localStorage.setItem('konexht_favs', JSON.stringify(this.favorites)); 
+        },
+        setActive(index) {
+            this.activeSolution = this.solutions[index];
+            this.showModal = true;
+            this.modalTab = 'overview';
+        }
+    }">
 
     <nav class="bg-white border-b border-gray-100 sticky top-0 z-50 py-4">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">

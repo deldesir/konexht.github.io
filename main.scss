@@ -1,4 +1,5 @@
---- # Front matter comment to ensure Jekyll properly reads file. --- $minima-brand-color: #2980b9;
+--- # Cleaned SCSS variables with robust Liquid defaults --- // Branding & Colors
+$minima-brand-color: #2980b9;
 
 $brand-color: {
         {
@@ -8,6 +9,15 @@ $brand-color: {
 
 ;
 
+$accent-color: {
+        {
+        site.link_color | default: "#2980b9"
+    }
+}
+
+;
+
+// Basics
 $body-color: {
         {
         site.body_color | default: "#333333"
@@ -24,16 +34,9 @@ $background-color: {
 
 ;
 
+// Header & Hero
 $header-image: "{{ site.cover_image | default: '' }}";
 $device-color: "assets/{{ site.device_color | default: 'black' }}.png";
-
-$accent-color: {
-        {
-        site.link_color | default: "#2980b9"
-    }
-}
-
-;
 
 $header-title-color: {
         {
@@ -43,6 +46,23 @@ $header-title-color: {
 
 ;
 
+$header_color: {
+        {
+        site.topbar_color | default: "#2c3e50"
+    }
+}
+
+;
+
+$header_transparency: {
+        {
+        site.topbar_transparency | default: "0.9"
+    }
+}
+
+;
+
+// Business & Service Grid
 $business-title-color: {
         {
         site.business_title_color | default: "#2c3e50"
@@ -83,6 +103,7 @@ $service-text-color: {
 
 ;
 
+// Footer & Social
 $footer-text-color: {
         {
         site.footer_text_color | default: "#b2bec3"
@@ -91,22 +112,23 @@ $footer-text-color: {
 
 ;
 
-$header_color: {
+$social-icons-foreground-color: {
         {
-        site.topbar_color | default: "#2c3e50"
+        site.social_icons_foreground_color | default: "#ffffff"
     }
 }
 
 ;
 
-$header_transparency: {
+$social-icons-background-color: {
         {
-        site.topbar_transparency | default: "0.9"
+        site.social_icons_background_color | default: "#34495e"
     }
 }
 
 ;
 
+// Overlays & Utilities
 $image-overlay-color: {
         {
         site.cover_overlay_color | default: "#000000"
@@ -134,22 +156,6 @@ $service-icons-foreground-color: {
 $service-icons-background-color: {
         {
         site.service_icons_background_color | default: "#3498db"
-    }
-}
-
-;
-
-$social-icons-foreground-color: {
-        {
-        site.social_icons_foreground_color | default: "#ffffff"
-    }
-}
-
-;
-
-$social-icons-background-color: {
-        {
-        site.social_icons_background_color | default: "#34495e"
     }
 }
 

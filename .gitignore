@@ -1,0 +1,10 @@
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+_local_gems
+.bundle
+venv
+*.log
+preview_generator.py

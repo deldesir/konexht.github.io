@@ -15,10 +15,7 @@ def generate_preview():
     os.makedirs('_site', exist_ok=True)
     os.makedirs('_site/factory', exist_ok=True)
 
-    with open('_site/index.html', 'w') as f:
-        f.write(base_html.replace('{{ CONTENT }}', landing_content))
-    with open('_site/factory/index.html', 'w') as f:
-        f.write(base_html.replace('{{ CONTENT }}', factory_content))
+    # Writing logic moved to end of function
     print("Preview generated at _site/index.html and _site/factory/index.html")
     nav_html = """
     <nav class="bg-white border-b border-gray-100 sticky top-0 z-50 py-4">
@@ -182,11 +179,11 @@ def generate_preview():
 </html>
 """
 
-    with open('/tmp/index.html', 'w') as f:
+    with open('_site/index.html', 'w') as f:
         f.write(base_html.replace('{{ CONTENT }}', landing_content))
-    with open('/tmp/factory.html', 'w') as f:
+    with open('_site/factory/index.html', 'w') as f:
         f.write(base_html.replace('{{ CONTENT }}', factory_content))
-    print("Preview generated at /tmp/index.html and /tmp/factory.html")
+    print("Preview generated at _site/index.html and _site/factory/index.html")
 
 if __name__ == "__main__":
     generate_preview()

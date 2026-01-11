@@ -1,7 +1,4 @@
 ---
 layout: null
 ---
-{
-    { site.data.solutions | jsonify
-    }
-}
+{{ site.data.solutions | jsonify }}
