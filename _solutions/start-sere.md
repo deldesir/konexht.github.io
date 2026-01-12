@@ -7,7 +7,7 @@ solution_id: "START-SERE"
 
 <div class="max-w-4xl mx-auto py-20 px-6">
   <div class="mb-10">
-    <span class="text-emerald-600 font-bold tracking-widest uppercase text-xs">Finance</span>
+    <span class="text-emerald-600 font-bold tracking-widest uppercase text-xs">Business & Economy</span>
     <h1 class="text-5xl font-black text-slate-900 mt-2 mb-6">Ti Machann Micro-Savings</h1>
     <p class="text-2xl text-slate-500 leading-relaxed">Save your profits daily, gourde by gourde.</p>
   </div>

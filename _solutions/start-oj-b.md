@@ -7,7 +7,7 @@ solution_id: "START-OJ-B"
 
 <div class="max-w-4xl mx-auto py-20 px-6">
   <div class="mb-10">
-    <span class="text-emerald-600 font-bold tracking-widest uppercase text-xs">Professional Services</span>
+    <span class="text-emerald-600 font-bold tracking-widest uppercase text-xs">Education & Jobs</span>
     <h1 class="text-5xl font-black text-slate-900 mt-2 mb-6">Local Job Finder & Labour Board (Bous-Travay)</h1>
     <p class="text-2xl text-slate-500 leading-relaxed">Connecting local hands with local needs.</p>
   </div>

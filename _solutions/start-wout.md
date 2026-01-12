@@ -7,7 +7,7 @@ solution_id: "START-WOUT"
 
 <div class="max-w-4xl mx-auto py-20 px-6">
   <div class="mb-10">
-    <span class="text-emerald-600 font-bold tracking-widest uppercase text-xs">Logistics</span>
+    <span class="text-emerald-600 font-bold tracking-widest uppercase text-xs">Business & Economy</span>
     <h1 class="text-5xl font-black text-slate-900 mt-2 mb-6">Pataj Camion (Cargo Matcher)</h1>
     <p class="text-2xl text-slate-500 leading-relaxed">Uber for local regional cargo space.</p>
   </div>

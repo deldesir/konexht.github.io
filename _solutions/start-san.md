@@ -7,7 +7,7 @@ solution_id: "START-SAN"
 
 <div class="max-w-4xl mx-auto py-20 px-6">
   <div class="mb-10">
-    <span class="text-emerald-600 font-bold tracking-widest uppercase text-xs">Emergency Response</span>
+    <span class="text-emerald-600 font-bold tracking-widest uppercase text-xs">Social Fabric</span>
     <h1 class="text-5xl font-black text-slate-900 mt-2 mb-6">Blood Donor Matcher</h1>
     <p class="text-2xl text-slate-500 leading-relaxed">The ultimate 11th-hour lifesaving network.</p>
   </div>

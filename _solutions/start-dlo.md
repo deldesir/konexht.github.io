@@ -7,7 +7,7 @@ solution_id: "START-DLO"
 
 <div class="max-w-4xl mx-auto py-20 px-6">
   <div class="mb-10">
-    <span class="text-emerald-600 font-bold tracking-widest uppercase text-xs">Utility Services</span>
+    <span class="text-emerald-600 font-bold tracking-widest uppercase text-xs">Safety & Infrastructure</span>
     <h1 class="text-5xl font-black text-slate-900 mt-2 mb-6">Water-Refill Notification</h1>
     <p class="text-2xl text-slate-500 leading-relaxed">Reliable water delivery at the tap of a button.</p>
   </div>

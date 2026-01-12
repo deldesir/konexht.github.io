@@ -7,7 +7,7 @@ solution_id: "START--D"
 
 <div class="max-w-4xl mx-auto py-20 px-6">
   <div class="mb-10">
-    <span class="text-emerald-600 font-bold tracking-widest uppercase text-xs">Social Services</span>
+    <span class="text-emerald-600 font-bold tracking-widest uppercase text-xs">Social Fabric</span>
     <h1 class="text-5xl font-black text-slate-900 mt-2 mb-6">NGO Matcher (Help Finder)</h1>
     <p class="text-2xl text-slate-500 leading-relaxed">Connecting your need with those who can help.</p>
   </div>

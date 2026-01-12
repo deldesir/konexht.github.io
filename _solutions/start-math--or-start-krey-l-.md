@@ -7,7 +7,7 @@ solution_id: "START-MATH--OR-START-KREY-L-"
 
 <div class="max-w-4xl mx-auto py-20 px-6">
   <div class="mb-10">
-    <span class="text-emerald-600 font-bold tracking-widest uppercase text-xs">Academic Support</span>
+    <span class="text-emerald-600 font-bold tracking-widest uppercase text-xs">Social Fabric</span>
     <h1 class="text-5xl font-black text-slate-900 mt-2 mb-6">The Radyo-Lekòl Tutor</h1>
     <p class="text-2xl text-slate-500 leading-relaxed">Turning passive radio lessons into interactive school days.</p>
   </div>

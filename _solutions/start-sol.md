@@ -7,7 +7,7 @@ solution_id: "START-SOL"
 
 <div class="max-w-4xl mx-auto py-20 px-6">
   <div class="mb-10">
-    <span class="text-emerald-600 font-bold tracking-widest uppercase text-xs">Finance / Social Solidarity</span>
+    <span class="text-emerald-600 font-bold tracking-widest uppercase text-xs">Business & Economy</span>
     <h1 class="text-5xl font-black text-slate-900 mt-2 mb-6">Digital Sol (Savings Circle)</h1>
     <p class="text-2xl text-slate-500 leading-relaxed">Bringing transparency and automation to traditional Haitian savings groups.</p>
   </div>

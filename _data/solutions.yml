@@ -1,6 +1,6 @@
 - id: START-GID
   name: Digital Local Guide (Anbasadè)
-  category: Hospitality / Tourism
+  category: Community & Culture
   pitch: Your personal AI concierge for the hidden gems of Haiti.
   tier: standard
   status: Concept
@@ -21,9 +21,20 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Hospitality / Tourism
+  name_kr: Nimerik Lokal Gid (Anbasadè)
+  pitch_kr: Konsyèj pèsonèl ou pou dekouvri trezò kache Ayiti.
+  logic_kr: Sèvi ak **Sèk Verifye**, this Pwosesis provides safe, vetted recommendations
+    for beaches, restaurants...
+  strategy_analysis_kr:
+    strengths: Sèvi ak **Sèk Verifye**, this Pwosesis provides safe, vetted recommendations
+      for beaches, restaurants, and historical sites in Kreyòl, French, or English.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-ATIS
   name: Craft Market Storyteller
-  category: Culture / Retail
+  category: Community & Culture
   pitch: Meet the artist behind every masterpiece.
   tier: standard
   status: Concept
@@ -44,11 +55,22 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Culture / Retail
+  name_kr: Craft Mache Storyteller
+  pitch_kr: Rankontre atis ki dèyè chak chèdèv.
+  logic_kr: Scan the code on a piece of art to hear the artist's story. Adds massive
+    emotional value to Lokal cr...
+  strategy_analysis_kr:
+    strengths: Scan the code on a piece of art to hear the artist's story. Adds massive
+      emotional value to Lokal crafts and drives higher sales for artisans.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-S-VIS
   name: Hotel Service-on-WhatsApp
-  category: Hotel Management
+  category: Community & Culture
   pitch: Premium hotel service, just one text away.
-  tier: premium
+  tier: elite
   status: Concept
   metrics:
     impact: 5
@@ -67,9 +89,20 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Hotel Management
+  name_kr: Hotel Service-on-WhatsApp
+  pitch_kr: Sèvis otèl de liks, jis yon mesaj lwen.
+  logic_kr: Order room service, book a taxi, or request housekeeping via the **Sèk
+    Verifye**. Reduces friction ...
+  strategy_analysis_kr:
+    strengths: Order room service, book a taxi, or request housekeeping via the **Sèk
+      Verifye**. Reduces friction and improves the guest experience.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-TRAVAY
   name: Safety & Travel Alerts
-  category: Crisis Management / Logistics
+  category: Safety & Infrastructure
   pitch: Travel with confidence and real-time intelligence.
   tier: standard
   status: Concept
@@ -90,11 +123,22 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Crisis Management / Logistics
+  name_kr: Safety & Travel Alerts
+  pitch_kr: Vwayaje avèk konfyans ak entèlijans an-dirèk.
+  logic_kr: An-Dirèk travel advisories and road conditions sent directly to your phone
+    to ensure safe and effic...
+  strategy_analysis_kr:
+    strengths: An-Dirèk travel advisories and road conditions sent directly to your
+      phone to ensure safe and efficient movement across Haiti.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-PARLE
   name: Instant Translator (Voice-to-Voice)
-  category: Communication / Hospitality
+  category: Social Fabric
   pitch: Break the language barrier, one audio at a time.
-  tier: premium
+  tier: elite
   status: Concept
   metrics:
     impact: 5
@@ -114,9 +158,21 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Communication / Hospitality
+  name_kr: Instant Translator (Vwa-to-Vwa)
+  pitch_kr: Kraze baryè lang lan, yon odyo alafwa.
+  logic_kr: Record a phrase in English; the Otomat replies with the same phrase in
+    Kreyòl audio on the **Verified H...
+  strategy_analysis_kr:
+    strengths: Record a phrase in English; the Otomat replies with the same phrase
+      in Kreyòl audio on the **Sèk Verifye**. Helps tourists and "Machanns" communicate
+      with dignity and ease.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-MOUTE
   name: Lakou Eco-Tour Booking
-  category: Adventure / Tourism
+  category: Community & Culture
   pitch: Discover the authentic Haiti with local experts.
   tier: standard
   status: Concept
@@ -138,11 +194,22 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Adventure / Tourism
+  name_kr: Lakou Eco-Tour Booking
+  pitch_kr: Dekouvri Ayiti natif natal ak ekspè lokal.
+  logic_kr: Book a guided hike or a Lokal boat tour in seconds. Connects visitors
+    directly with grassroots Gid...
+  strategy_analysis_kr:
+    strengths: Book a guided hike or a Lokal boat tour in seconds. Connects visitors
+      directly with grassroots guides, ensuring Touris dollars stay in the Lokal community.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-ISTWA
   name: Citadelle "Digital Curator"
-  category: Culture / Education
+  category: Community & Culture
   pitch: History comes alive at your fingertips.
-  tier: premium
+  tier: elite
   status: Concept
   metrics:
     impact: 5
@@ -162,9 +229,21 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Culture / Education
+  name_kr: Citadelle "Nimerik Curator"
+  pitch_kr: Istwa a vin vivan nan pwent dwèt ou.
+  logic_kr: Scan different codes at historical monuments like the Citadelle. Otomat
+    tells you the story of that...
+  strategy_analysis_kr:
+    strengths: Scan different codes at historical monuments like the Citadelle. Otomat
+      tells you the story of that specific spot (e.g., the Cannons or the Palace)
+      via the **Sèk Verifye**.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-MANJE
   name: The Pre-Order Deli (Paté-on-the-Go)
-  category: Food / Retail
+  category: Social Fabric
   pitch: Skip the line and get your lunch faster.
   tier: standard
   status: Concept
@@ -185,9 +264,20 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Food / Retail
+  name_kr: Pre-Order Deli (Paté-on-the-Go)
+  pitch_kr: Pa fè lakou, jwenn manje ou pi vit.
+  logic_kr: WhatsApp menu to pre-order patties and drinks via the **Sèk Verifye**,
+    reducing wait times and incr...
+  strategy_analysis_kr:
+    strengths: WhatsApp menu to pre-order patties and drinks via the **Sèk Verifye**,
+      reducing wait times and increasing bakery efficiency.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-CHEVE
   name: Barber/Salon Appointment Bot
-  category: Local Services
+  category: Community & Culture
   pitch: Your professional schedule, managed with ease.
   tier: standard
   status: Concept
@@ -208,9 +298,20 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Local Services
+  name_kr: Barber/Salon Appointment Otomat
+  pitch_kr: Ajenda pwofesyonèl ou, jere avèk fasilite.
+  logic_kr: Check availability and book a slot directly. Professionalizes small service
+    businesses and eliminate...
+  strategy_analysis_kr:
+    strengths: Check availability and book a slot directly. Professionalizes small
+      service businesses and eliminates the "no-show" problem.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-MEDIK
   name: Pharmacy Stock Check
-  category: Healthcare / Retail
+  category: Education & Jobs
   pitch: Drive with a destination—know where the medicine is.
   tier: standard
   status: Concept
@@ -231,9 +332,20 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Healthcare / Retail
+  name_kr: Pharmacy Stòk Check
+  pitch_kr: Kondwi ak yon destinasyon—konnen kote medikaman an ye.
+  logic_kr: Tèks the name of a medicine to the **Sèk Verifye**; the Otomat tells you
+    if it's in Stòk and the pric...
+  strategy_analysis_kr:
+    strengths: Tèks the name of a medicine to the **Sèk Verifye**; the Otomat tells
+      you if it's in Stòk and the Pri. Saves time and stress for those in need.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-PRI
   name: Commodity Price Tracker (Mache Live)
-  category: Market Intelligence
+  category: Business & Economy
   pitch: Don't get overcharged—know the real price today.
   tier: standard
   status: Concept
@@ -255,9 +367,21 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Market Intelligence
+  name_kr: Commodity Pri Tracker (Mache Live)
+  pitch_kr: Pa peye twòp—konnen vrè pri a jodi a.
+  logic_kr: A daily feed of real-Mache prices for more than just food. Check the Pri
+    of cement, propane, rice...
+  strategy_analysis_kr:
+    strengths: A daily feed of real-Mache prices for more than just food. Check the
+      Pri of cement, propane, rice, and charcoal across major depots. Empowers buyers
+      to negotiate and prevents Pri-gouging during shortages.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-DLO
   name: Water-Refill Notification
-  category: Utility Services
+  category: Safety & Infrastructure
   pitch: Reliable water delivery at the tap of a button.
   tier: standard
   status: Concept
@@ -278,9 +402,20 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Utility Services
+  name_kr: Dlo-Refill Notifikasyon
+  pitch_kr: Livrezon dlo serye nan yon sèl touche.
+  logic_kr: Direct Notifikasyon for Dlo truck delivery or 5-gallon refills. Ensures
+    consistent utility managem...
+  strategy_analysis_kr:
+    strengths: Direct Notifikasyon for Dlo truck delivery or 5-gallon refills. Ensures
+      consistent utility management for households in Haiti.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-GAZ
   name: Gas Station Inventory Bot
-  category: Essential Logistics
+  category: Business & Economy
   pitch: Drive with a goal—know who has fuel right now.
   tier: standard
   status: Concept
@@ -302,9 +437,21 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Essential Logistics
+  name_kr: Gas Station Envantè Otomat
+  pitch_kr: Kondwi ak yon objektif—konnen ki moun ki gen gaz kounye a.
+  logic_kr: A An-Dirèk Tèt Ansanm map of fuel availability. Users report "Gaz Delmas
+    32 - YES" or "Gaz Petion...
+  strategy_analysis_kr:
+    strengths: A An-Dirèk Tèt Ansanm map of fuel availability. Users report "Gaz Delmas
+      32 - YES" or "Gaz Petion-ville - NO" to Èd everyone save time and avoid long
+      queues.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-RESI
   name: Boutik Digital Receipt
-  category: Retail / Finance
+  category: Business & Economy
   pitch: Secure your spending with a digital paper-trail.
   tier: standard
   status: Concept
@@ -325,11 +472,22 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Retail / Finance
+  name_kr: Boutik Nimerik Receipt
+  pitch_kr: Sekirize depans ou ak yon tras nimerik.
+  logic_kr: After a purchase at a Lokal shop, get a Tèks summary of your total spent.
+    Helps families track their...
+  strategy_analysis_kr:
+    strengths: After a purchase at a Lokal shop, get a Tèks summary of your total
+      spent. Helps families track their monthly expenses without needing paper books.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-FLASH
   name: Flash-Sale Broadcast Trigger
-  category: Sales / Marketing
+  category: Social Fabric
   pitch: Turn your extra stock into cash, instantly.
-  tier: premium
+  tier: elite
   status: Concept
   metrics:
     impact: 5
@@ -349,9 +507,21 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Sales / Marketing
+  name_kr: Flash-Sale Broadcast Trigger
+  pitch_kr: Tounen stòk siplemantè ou an lajan kach, touswit.
+  logic_kr: A bakery owner can Tèks "BREAD 50% OFF - 1 HOUR" to the **Sèk Verifye**.
+    Otomat instantly broadcas...
+  strategy_analysis_kr:
+    strengths: A bakery owner can Tèks "BREAD 50% OFF - 1 HOUR" to the **Sèk Verifye**.
+      Otomat instantly broadcasts the deal to all customers within 2km. Perfect for
+      clearing perishable Stòk.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-SEKR-
   name: The Midnight Confessional
-  category: Social Connection
+  category: Community & Culture
   pitch: Share a secret, connect with a soul.
   tier: standard
   status: Concept
@@ -372,9 +542,20 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Social Connection
+  name_kr: Midnight Confessional
+  pitch_kr: Pataje yon sekrè, konekte ak yon nanm.
+  logic_kr: Share an anonymous secret at midnight via the **Sèk Verifye**; the Otomat
+    sends it to a random strange...
+  strategy_analysis_kr:
+    strengths: Share an anonymous secret at midnight via the **Sèk Verifye**; the
+      Otomat sends it to a random stranger, creating a unique Sosyal bond.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-STAR
   name: Raboday Voice Star
-  category: Music / Entertainment
+  category: Social Fabric
   pitch: Your neighborhood's viral talent hunt.
   tier: standard
   status: Concept
@@ -395,9 +576,20 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Music / Entertainment
+  name_kr: Raboday Vwa Star
+  pitch_kr: Konkou talan viral nan katye ou.
+  logic_kr: Record a verse; stay tuned to hear the top verses and vote for the winner.
+    Taps into the heart of mu...
+  strategy_analysis_kr:
+    strengths: Record a verse; stay tuned to hear the top verses and vote for the
+      winner. Taps into the heart of musical Kilti.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-BOUL
   name: Borlette Dream Guide
-  category: Cultural Gaming
+  category: Community & Culture
   pitch: Tradition meets lucky interpretation.
   tier: standard
   status: Concept
@@ -418,11 +610,22 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Cultural Gaming
+  name_kr: Borlette Dream Gid
+  pitch_kr: Tradisyon rankontre entèpretasyon chans.
+  logic_kr: Interpret your dreams into lucky lottery numbers based on Haitian tradition
+    via the **Sèk Verifye**...
+  strategy_analysis_kr:
+    strengths: Interpret your dreams into lucky lottery numbers based on Haitian tradition
+      via the **Sèk Verifye**. Highly daily engagement.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-VAYB
   name: AI Wingman & Vibe Check
-  category: Social Utility / Relationships
+  category: Community & Culture
   pitch: Navigating modern romance with AI wisdom.
-  tier: premium
+  tier: elite
   status: Concept
   metrics:
     impact: 5
@@ -441,9 +644,20 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Social Utility / Relationships
+  name_kr: AI Wingman & Vibe Check
+  pitch_kr: Navige renmen modèn ak sajès AI.
+  logic_kr: Paste a Tèks from your crush and the Otomat tells you if they are "into
+    you" or not. High Sosyal utilit...
+  strategy_analysis_kr:
+    strengths: Paste a Tèks from your crush and the Otomat tells you if they are "into
+      you" or not. High Sosyal utility and shareability.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-OJ-B
   name: Local Job Finder & Labour Board (Bous-Travay)
-  category: Professional Services
+  category: Education & Jobs
   pitch: Connecting local hands with local needs.
   tier: standard
   status: Concept
@@ -466,9 +680,22 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Professional Services
+  name_kr: Lokal Job Finder & Labour Board (Bous-Travay)
+  pitch_kr: Konekte men lokal ak bezwen lokal.
+  logic_kr: Sèvi ak **Sèk Verifye**, this Pwosesis acts as a Nimerik bulletin board.
+    Homeowners post "Need a wall...
+  strategy_analysis_kr:
+    strengths: Sèvi ak **Sèk Verifye**, this Pwosesis acts as a Nimerik bulletin board.
+      Homeowners post "Need a wall painted" or "Need Èd with cleaning," and registered
+      Lokal workers receive an instant broadcast. Creates Lokal income opportunities
+      and professionalizes small-scale labor.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-FET
   name: Community Event Finder
-  category: Social
+  category: Community & Culture
   pitch: Discover your neighborhood's heartbeat.
   tier: standard
   status: Concept
@@ -490,9 +717,21 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Social
+  name_kr: Community Event Finder
+  pitch_kr: Dekouvri batman kè katye ou.
+  logic_kr: Tèks your neighborhood or district to the **Sèk Verifye** to get a 2-minute
+    audio or Tèks update on...
+  strategy_analysis_kr:
+    strengths: Tèks your neighborhood or district to the **Sèk Verifye** to get a
+      2-minute audio or Tèks update on festivals, street fairs, and community meetings
+      near you.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-ISTWA
   name: Digital Storytelling Circle
-  category: Entertainment
+  category: Community & Culture
   pitch: Be the author of your community's voice.
   tier: standard
   status: Concept
@@ -514,11 +753,23 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Entertainment
+  name_kr: Nimerik Storytelling Circle
+  pitch_kr: Se ou ki otè vwa kominote ou.
+  logic_kr: Collaborative Vwa-memo stories. Listen to the last person's story part,
+    then record your own 30-se...
+  strategy_analysis_kr:
+    strengths: Collaborative Vwa-memo stories. Listen to the last person's story part,
+      then record your own 30-second addition to keep the "Lakou" storytelling tradition
+      alive digitally.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-KADO
   name: Kindness Challenge Bot
-  category: Social / Viral
+  category: Community & Culture
   pitch: Make someone's day, then tell the world.
-  tier: premium
+  tier: elite
   status: Concept
   metrics:
     impact: 5
@@ -538,9 +789,21 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Social / Viral
+  name_kr: Kindness Challenge Otomat
+  pitch_kr: Fè jounen yon moun bèl, epi di mond lan.
+  logic_kr: Every morning, the Otomat sends a tiny "Kindness Dare" (e.g., "Èd a Ti
+    Machann carry their bag"). Onc...
+  strategy_analysis_kr:
+    strengths: Every morning, the Otomat sends a tiny "Kindness Dare" (e.g., "Èd a
+      Ti Machann carry their bag"). Once complete, you send a photo or Tèks to "level
+      up" your Sosyal profile.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-SEKI
   name: The Secure Escrow Agent
-  category: Trust & Security
+  category: Safety & Infrastructure
   pitch: Unlocking safe P2P commerce in high-risk environments.
   tier: standard
   status: Concept
@@ -561,9 +824,20 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Trust & Security
+  name_kr: Secure Tchèk-A-Tchèk Agent
+  pitch_kr: Degaje komès an sekirite nan zòn ki gen risk.
+  logic_kr: Sèvi ak **Sèk Verifye** number, this builds massive trust in the informal
+    marketplace by holding ...
+  strategy_analysis_kr:
+    strengths: Sèvi ak **Sèk Verifye** number, this builds massive trust in the informal
+      marketplace by holding funds in Tchèk-A-Tchèk until the trade is confirmed.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-SOL
   name: Digital Sol (Savings Circle)
-  category: Finance / Social Solidarity
+  category: Business & Economy
   pitch: Bringing transparency and automation to traditional Haitian savings groups.
   tier: standard
   status: Concept
@@ -584,9 +858,20 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Finance / Social Solidarity
+  name_kr: Nimerik Sol (Likid Circle)
+  pitch_kr: Pote transparans ak otomatizasyon nan gwoup sol tradisyonèl yo.
+  logic_kr: Eliminates arguments about Peman history. Otomat handles the ledger and
+    payout rotation automatic...
+  strategy_analysis_kr:
+    strengths: Eliminates arguments about Peman history. Otomat handles the ledger
+      and payout rotation automatically.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-WOUT
   name: Pataj Camion (Cargo Matcher)
-  category: Logistics
+  category: Business & Economy
   pitch: Uber for local regional cargo space.
   tier: standard
   status: Concept
@@ -607,9 +892,20 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Logistics
+  name_kr: Pataj Camion (Cargo Matcher)
+  pitch_kr: Uber pou espas kago rejiwo lokal.
+  logic_kr: Maximizes Chofè income and lowers costs for provincial traders by filling
+    empty truck space.
+  strategy_analysis_kr:
+    strengths: Maximizes Chofè income and lowers costs for provincial traders by filling
+      empty truck space.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-LIST
   name: Micro-Invoice Ledger
-  category: Retail Management
+  category: Business & Economy
   pitch: Your store's credit book, but for the 21st century.
   tier: standard
   status: Concept
@@ -630,11 +926,22 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Retail Management
+  name_kr: Micro-Invoice Ledger
+  pitch_kr: Kanè kredi magazen ou, men pou 21yèm syèk la.
+  logic_kr: Prevents disputes over debts by providing an automated receipt log for
+    both shopkeeper and Kliyan.
+  strategy_analysis_kr:
+    strengths: Prevents disputes over debts by providing an automated receipt log
+      for both shopkeeper and Kliyan.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-BRAND
   name: Instant Brand Bot
-  category: Entrepreneurship
+  category: Business & Economy
   pitch: Professionalize your hustle in 60 seconds with AI imagery.
-  tier: premium
+  tier: elite
   status: Concept
   metrics:
     impact: 5
@@ -653,9 +960,20 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Entrepreneurship
+  name_kr: Instant Brand Otomat
+  pitch_kr: Pwofesyonèlize biznis ou nan 60 segonn ak imaj AI.
+  logic_kr: Gives small-scale entrepreneurs a professional identity that attracts
+    more customers and builds bran...
+  strategy_analysis_kr:
+    strengths: Gives small-scale entrepreneurs a professional identity that attracts
+      more customers and builds brand pride.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-ST-K
   name: Wholesaler Inventory Broadcast
-  category: Supply Chain
+  category: Business & Economy
   pitch: Stop the guessing game—know exactly where the rice is.
   tier: standard
   status: Concept
@@ -676,9 +994,20 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Supply Chain
+  name_kr: Wholesaler Envantè Broadcast
+  pitch_kr: Sispann devine—konnen egzakteman kote diri a ye.
+  logic_kr: Saves vendors from hours of walking to find products; increases depot
+    sales velocity by keeping vend...
+  strategy_analysis_kr:
+    strengths: Saves vendors from hours of walking to find products; increases depot
+      sales velocity by keeping vendors informed.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-SERE
   name: Ti Machann Micro-Savings
-  category: Finance
+  category: Business & Economy
   pitch: Save your profits daily, gourde by gourde.
   tier: standard
   status: Concept
@@ -700,9 +1029,20 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Finance
+  name_kr: Ti Machann Micro-Likid
+  pitch_kr: Sere pwofi ou chak jou, goud pa goud.
+  logic_kr: Encourages daily financial discipline. Vendors can "deposit" small amounts
+    of their daily earnings i...
+  strategy_analysis_kr:
+    strengths: Encourages daily financial discipline. Vendors can "deposit" small
+      amounts of their daily earnings into a secure mobile wallet via the **Sèk Verifye**.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-ABONE
   name: Wholesale Subscription Alert
-  category: Supply Chain
+  category: Business & Economy
   pitch: Never run out of your best-selling items.
   tier: standard
   status: Concept
@@ -724,11 +1064,23 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Supply Chain
+  name_kr: Wholesale Subscription Avètisman
+  pitch_kr: Pa janm manke atik ou vann pi byen yo.
+  logic_kr: 'Stores can "subscribe" to recurring delivery prompts. Otomat asks: "Is
+    it time for your weekly oil ...'
+  strategy_analysis_kr:
+    strengths: 'Stores can "subscribe" to recurring delivery prompts. Otomat asks:
+      "Is it time for your weekly oil restock?" to ensure they never lose a sale due
+      to empty shelves.'
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-BIZNIS
   name: Business Skills Micro-Course
-  category: Education / Business
+  category: Education & Jobs
   pitch: Learn how to manage your cash flow via WhatsApp.
-  tier: premium
+  tier: elite
   status: Concept
   metrics:
     impact: 5
@@ -747,11 +1099,22 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Education / Business
+  name_kr: Biznis Skills Micro-Course
+  pitch_kr: Aprann kijan pou jere lajan kach ou sou WhatsApp.
+  logic_kr: Delivers 2-minute daily audio tips on bookkeeping, marketing, and Kliyan
+    service. Level up your "h...
+  strategy_analysis_kr:
+    strengths: Delivers 2-minute daily audio tips on bookkeeping, marketing, and Kliyan
+      service. Level up your "hustle" while you work.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-DOKT-
   name: The Agri-Doktè (Pest ID)
-  category: Health / Agriculture
+  category: Education & Jobs
   pitch: Diagnosis of crop diseases from photos using AI.
-  tier: premium
+  tier: elite
   status: Concept
   metrics:
     impact: 5
@@ -770,9 +1133,20 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Health / Agriculture
+  name_kr: Agri-Doktè (Pest ID)
+  pitch_kr: Dyagnostik maladi rekòt apati foto lè l sèvi avèk AI.
+  logic_kr: Sèvi ak **Sèk Verifye** number, this prevents total crop loss through
+    rapid, expert diagnosis via...
+  strategy_analysis_kr:
+    strengths: Sèvi ak **Sèk Verifye** number, this prevents total crop loss through
+      rapid, expert diagnosis via WhatsApp.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-PRI
   name: Market Price Watch
-  category: Finance / Trade
+  category: Business & Economy
   pitch: Information is power—negotiate like a pro.
   tier: standard
   status: Concept
@@ -793,9 +1167,20 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Finance / Trade
+  name_kr: Mache Pri Watch
+  pitch_kr: Enfòmasyon se pouvwa—negosye tankou yon pwofesyonèl.
+  logic_kr: Empowers farmers to know the true value of their crops before they meet
+    with urban middlemen.
+  strategy_analysis_kr:
+    strengths: Empowers farmers to know the true value of their crops before they
+      meet with urban middlemen.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-ZOUTI
   name: Equipment Rent-Share
-  category: Logistics
+  category: Business & Economy
   pitch: Access the tools you need, when you need them.
   tier: standard
   status: Concept
@@ -816,9 +1201,20 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Logistics
+  name_kr: Equipment Rent-Share
+  pitch_kr: Jwenn aksè ak zouti ou bezwen yo, lè ou bezwen yo.
+  logic_kr: Lowers the barrier to entry for modern farming; turns idle equipment into
+    a passive income stream.
+  strategy_analysis_kr:
+    strengths: Lowers the barrier to entry for modern farming; turns idle equipment
+      into a passive income stream.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-T-
   name: Soil Health AI
-  category: Science / Yield Optimization
+  category: Social Fabric
   pitch: Plant the right crop for the right soil.
   tier: standard
   status: Concept
@@ -839,9 +1235,20 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Science / Yield Optimization
+  name_kr: Soil Sante AI
+  pitch_kr: Plant the right crop for the right soil.
+  logic_kr: Increases yield per acre by ensuring farmers don't waste seeds on unsuitable
+    soil conditions.
+  strategy_analysis_kr:
+    strengths: Increases yield per acre by ensuring farmers don't waste seeds on unsuitable
+      soil conditions.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-B-T
   name: Cattle & Livestock Registry
-  category: Livestock Management
+  category: Social Fabric
   pitch: Your animal's health record, in your pocket.
   tier: standard
   status: Concept
@@ -862,9 +1269,20 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Livestock Management
+  name_kr: Cattle & Livestock Registry
+  pitch_kr: Ou animal's Sante record, in your pocket.
+  logic_kr: Creates a Nimerik "Sante passport" that makes animals more valuable and
+    verifiable during sale.
+  strategy_analysis_kr:
+    strengths: Creates a Nimerik "Sante passport" that makes animals more valuable
+      and verifiable during sale.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-RADYO
   name: Agri-Climate Voice Memo
-  category: Information Services
+  category: Social Fabric
   pitch: Local weather and planting tips, spoken in Kreyòl.
   tier: standard
   status: Concept
@@ -885,9 +1303,20 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Information Services
+  name_kr: Agri-Climate Vwa Memo
+  pitch_kr: Lokal weather and planting tips, spoken in Kreyòl.
+  logic_kr: Delivers weekly Vwa-memo updates on rain predictions and seasonal advice.
+    Perfect for farmers who ...
+  strategy_analysis_kr:
+    strengths: Delivers weekly Vwa-memo updates on rain predictions and seasonal advice.
+      Perfect for farmers who prefer listening over reading.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-CHACHE
   name: Seasonal Market Finder
-  category: Trade
+  category: Business & Economy
   pitch: Find out which products are in demand right now.
   tier: standard
   status: Concept
@@ -909,11 +1338,23 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Trade
+  name_kr: Seasonal Mache Finder
+  pitch_kr: Find out which products are in demand right now.
+  logic_kr: 'Analyzes historical and current trends to tell farmers: "Beans are in
+    short supply in Port-au-Prince...'
+  strategy_analysis_kr:
+    strengths: 'Analyzes historical and current trends to tell farmers: "Beans are
+      in short supply in Port-au-Prince; Pri is rising." Helps them choose high-profit
+      crops.'
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-CHENI
   name: Pest-Alert Community Map
-  category: Community Safety
+  category: Social Fabric
   pitch: Warn your neighbors, protect the valley.
-  tier: premium
+  tier: elite
   status: Concept
   metrics:
     impact: 5
@@ -933,9 +1374,21 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Community Safety
+  name_kr: Pest-Avètisman Community Map
+  pitch_kr: Warn your neighbors, protect the valley.
+  logic_kr: When one Plantè reports a pest outbreak (like locusts or caterpillars),
+    the **Sèk Verifye** automat...
+  strategy_analysis_kr:
+    strengths: When one Plantè reports a pest outbreak (like locusts or caterpillars),
+      the **Sèk Verifye** automatically warns all other farmers within 10km to take
+      precautions.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-LWA
   name: The Pocket Lawyer (Dwa Mwen)
-  category: Legal Aid / Human Rights
+  category: Social Fabric
   pitch: Instant lookup of your rights, anywhere, anytime.
   tier: standard
   status: Concept
@@ -956,9 +1409,20 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Legal Aid / Human Rights
+  name_kr: Pocket Lawyer (Dwa Mwen)
+  pitch_kr: Instant lookup of your rights, anywhere, anytime.
+  logic_kr: Empowers citizens by providing the exact articles from the Haitian Penal
+    Code regarding arrest and s...
+  strategy_analysis_kr:
+    strengths: Empowers citizens by providing the exact articles from the Haitian
+      Penal Code regarding arrest and search rights via the **Sèk Verifye**.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-T-
   name: Land Dispute Guide
-  category: Property Rights
+  category: Social Fabric
   pitch: Protecting your property from scams and disputes.
   tier: standard
   status: Concept
@@ -979,9 +1443,20 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Property Rights
+  name_kr: Land Dispute Gid
+  pitch_kr: Protecting your property from scams and disputes.
+  logic_kr: A step-by-step Gid to verifying deeds with Notaries and DGI to ensure
+    your generational wealth is ...
+  strategy_analysis_kr:
+    strengths: A step-by-step Gid to verifying deeds with Notaries and DGI to ensure
+      your generational wealth is secure and protected.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-DENSY-
   name: Anonymous Corruption Report
-  category: Accountability / Civic Tech
+  category: Social Fabric
   pitch: A safe, silent voice for a cleaner community.
   tier: standard
   status: Concept
@@ -1002,9 +1477,20 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Accountability / Civic Tech
+  name_kr: Anonymous Corruption Report
+  pitch_kr: A safe, silent Vwa for a cleaner community.
+  logic_kr: Bay a secure, anonymous channel to report bribery or misconduct safely
+    on the **Sèk Verifye**.
+  strategy_analysis_kr:
+    strengths: Bay a secure, anonymous channel to report bribery or misconduct safely
+      on the **Sèk Verifye**.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START--D
   name: NGO Matcher (Help Finder)
-  category: Social Services
+  category: Social Fabric
   pitch: Connecting your need with those who can help.
   tier: standard
   status: Concept
@@ -1025,9 +1511,20 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Social Services
+  name_kr: NGO Matcher (Èd Finder)
+  pitch_kr: Connecting your need with those who can Èd.
+  logic_kr: Bridges the gap between Entènasyonal aid and Lokal needs by matching you
+    with the nearest NGO based...
+  strategy_analysis_kr:
+    strengths: Bridges the gap between Entènasyonal aid and Lokal needs by matching
+      you with the nearest NGO based on your specific situation.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-MINIS
   name: Community Resource Finder (Minisipalite)
-  category: Civic Services
+  category: Social Fabric
   pitch: Your town hall, open 24/7 on WhatsApp.
   tier: standard
   status: Concept
@@ -1049,9 +1546,21 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Civic Services
+  name_kr: Community Resource Finder (Minisipalite)
+  pitch_kr: Ou town hall, open 24/7 on WhatsApp.
+  logic_kr: Sèvi ak **Sèk Verifye**, residents can find localized info on trash collection
+    schedules, Lokal t...
+  strategy_analysis_kr:
+    strengths: Sèvi ak **Sèk Verifye**, residents can find localized info on trash
+      collection schedules, Lokal tax deadlines, and Piblik hearing dates. Increases
+      civic engagement and city transparency.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-DOSYE
   name: Digital Permit & License Guide
-  category: Administrative Law
+  category: Social Fabric
   pitch: Know the steps, skip the confusion.
   tier: standard
   status: Concept
@@ -1073,9 +1582,21 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Administrative Law
+  name_kr: Nimerik Permit & License Gid
+  pitch_kr: Know the steps, skip the confusion.
+  logic_kr: A guided Pwosesis for obtaining complex documents (Chofè’s License, NIF,
+    Trade Permit). It tells you ex...
+  strategy_analysis_kr:
+    strengths: A guided Pwosesis for obtaining complex documents (Chofè’s License,
+      NIF, Trade Permit). It tells you exactly which papers to bring and where to
+      go, reducing corruption opportunities and save users' time.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-KAY
   name: Tenant Rights Guardian
-  category: Property / Law
+  category: Social Fabric
   pitch: Know your home, defend your contract.
   tier: standard
   status: Concept
@@ -1097,9 +1618,21 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Property / Law
+  name_kr: Tenant Rights Guardian
+  pitch_kr: Know your home, defend your contract.
+  logic_kr: Instant guidance on Haitian rental law. Learn about legal eviction notice
+    periods, rent increase lim...
+  strategy_analysis_kr:
+    strengths: Instant guidance on Haitian rental law. Learn about legal eviction
+      notice periods, rent increase limits, and Sekirite deposit rights in simple
+      Kreyòl.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-AK
   name: Birth Registration Helper
-  category: Civic Tech
+  category: Social Fabric
   pitch: Every child deserves a name and a future.
   tier: standard
   status: Concept
@@ -1120,11 +1653,22 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Civic Tech
+  name_kr: Birth Registration Helper
+  pitch_kr: Every child deserves a name and a future.
+  logic_kr: A step-by-step Gid to navigating the "Biro d’Eta Sivil." Sends reminders
+    and list of documents nee...
+  strategy_analysis_kr:
+    strengths: A step-by-step Gid to navigating the "Biro d’Eta Sivil." Sends reminders
+      and list of documents needed to ensure no child is left without a legal identity.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-PWOTET
   name: GBV Support & Reporting
-  category: Human Rights / Safety
+  category: Social Fabric
   pitch: A safe, silent voice for a safer you.
-  tier: premium
+  tier: elite
   status: Concept
   metrics:
     impact: 5
@@ -1144,9 +1688,21 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Human Rights / Safety
+  name_kr: GBV Sipò & Reporting
+  pitch_kr: A safe, silent Vwa for a safer you.
+  logic_kr: Discreet and secure connection to specialized Sipò for gender-based violence.
+    Bay instant "S...
+  strategy_analysis_kr:
+    strengths: Discreet and secure connection to specialized Sipò for gender-based
+      violence. Bay instant "SOS" routing to the nearest safe-house or medical response
+      clinic.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-DIASPORA
   name: Diaspora Direct Bill-Pay
-  category: Finance / Health
+  category: Business & Economy
   pitch: Closing the gap with verified healthcare remittances.
   tier: standard
   status: Concept
@@ -1168,9 +1724,20 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Finance / Health
+  name_kr: Diaspora Direct Bill-Pay
+  pitch_kr: Closing the gap with verified healthcare remittances.
+  logic_kr: Sèvi ak **Sèk Verifye**, this ensures that Èd from overseas goes exactly
+    where it is needed—pay...
+  strategy_analysis_kr:
+    strengths: Sèvi ak **Sèk Verifye**, this ensures that Èd from overseas goes exactly
+      where it is needed—paying the bill directly instead of just sending cash.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-SAN
   name: Blood Donor Matcher
-  category: Emergency Response
+  category: Social Fabric
   pitch: The ultimate 11th-hour lifesaving network.
   tier: standard
   status: Concept
@@ -1191,9 +1758,20 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Emergency Response
+  name_kr: Blood Donor Matcher
+  pitch_kr: ultimate 11th-hour lifesaving Rezo.
+  logic_kr: Rapidly matches patients in need of specific blood types with verified
+    Lokal donors during surgical ...
+  strategy_analysis_kr:
+    strengths: Rapidly matches patients in need of specific blood types with verified
+      Lokal donors during surgical emergencies.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-BEBE
   name: Prenatal MomConnect
-  category: Maternal Health
+  category: Social Fabric
   pitch: Every pregnancy journey, guided by trust.
   tier: standard
   status: Concept
@@ -1214,9 +1792,20 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Maternal Health
+  name_kr: Prenatal MomConnect
+  pitch_kr: Every pregnancy journey, guided by trust.
+  logic_kr: Weekly Sante tips and vital appointment reminders sent relative to the
+    mother's due date to improve...
+  strategy_analysis_kr:
+    strengths: Weekly Sante tips and vital appointment reminders sent relative to
+      the mother's due date to improves Sante outcomes.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-SANT-
   name: HIV/TB Adherence Bot
-  category: Chronic Disease Management
+  category: Social Fabric
   pitch: A digital companion for chronic health success.
   tier: standard
   status: Concept
@@ -1237,9 +1826,20 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Chronic Disease Management
+  name_kr: HIV/TB Adherence Otomat
+  pitch_kr: A Nimerik companion for chronic Sante success.
+  logic_kr: Friendly daily check-ins on the **Sèk Verifye** to remind patients to
+    take life-saving medication a...
+  strategy_analysis_kr:
+    strengths: Friendly daily check-ins on the **Sèk Verifye** to remind patients
+      to take life-saving medication and monitor side effects.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-DAT
   name: Medicine Expiry Guardian
-  category: Safety
+  category: Safety & Infrastructure
   pitch: Ensure your medicine is safe and effective.
   tier: standard
   status: Concept
@@ -1260,9 +1860,20 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Safety
+  name_kr: Medicine Expiry Guardian
+  pitch_kr: Ensure your medicine is safe and effective.
+  logic_kr: 'Users log their medication expiry dates. Otomat sends a warning 30 days
+    before it expires: "Time to...'
+  strategy_analysis_kr:
+    strengths: 'Users log their medication expiry dates. Otomat sends a warning 30
+      days before it expires: "Time to restock your insulin at the pharmacy."'
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-VIBE
   name: Community Vibe Check
-  category: Mental Health
+  category: Social Fabric
   pitch: A temperature check for community mental health.
   tier: standard
   status: Concept
@@ -1284,11 +1895,23 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Mental Health
+  name_kr: Community Vibe Check
+  pitch_kr: A temperature check for community mental Sante.
+  logic_kr: 'Anonymized daily check-ins: "How is the neighborhood''s spirit today
+    (1-5)?" If levels drop significa...'
+  strategy_analysis_kr:
+    strengths: 'Anonymized daily check-ins: "How is the neighborhood''s spirit today
+      (1-5)?" If levels drop significantly, it triggers a "Sosyal Worker" community
+      visit Avètisman.'
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-CLINIC
   name: Emergency Clinic Finder
-  category: Emergency
+  category: Social Fabric
   pitch: Find 24/7 care in an instant.
-  tier: premium
+  tier: elite
   status: Concept
   metrics:
     impact: 5
@@ -1307,9 +1930,20 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Emergency
+  name_kr: Emergency Clinic Finder
+  pitch_kr: Find 24/7 care in an instant.
+  logic_kr: Tèks your location or neighborhood to the **Sèk Verifye**. Otomat instantly
+    returns the address an...
+  strategy_analysis_kr:
+    strengths: Tèks your location or neighborhood to the **Sèk Verifye**. Otomat instantly
+      returns the address and phone number for the nearest 24/7 open clinic.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-MATH--OR-START-KREY-L-
   name: The Radyo-Lekòl Tutor
-  category: Academic Support
+  category: Social Fabric
   pitch: Turning passive radio lessons into interactive school days.
   tier: standard
   status: Concept
@@ -1330,11 +1964,22 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Academic Support
+  name_kr: Radyo-Lekòl Tutor
+  pitch_kr: Turning passive radio lessons into interactive school days.
+  logic_kr: Uses the **Sèk Verifye** to turn radio-based learning into an active,
+    measurable experience with in...
+  strategy_analysis_kr:
+    strengths: Uses the **Sèk Verifye** to turn radio-based learning into an active,
+      measurable experience with instant Kreyòl feedback.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-ANGL-
   name: English Mastery AI
-  category: Skills / Labor Market
+  category: Social Fabric
   pitch: Professional English practice in your pocket.
-  tier: premium
+  tier: elite
   status: Concept
   metrics:
     impact: 5
@@ -1353,9 +1998,20 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Skills / Labor Market
+  name_kr: English Mastery AI
+  pitch_kr: Professional English practice in your pocket.
+  logic_kr: Practice pronunciation and greeting customers; AI listens and corrects
+    you to Èd you get hired fas...
+  strategy_analysis_kr:
+    strengths: Practice pronunciation and greeting customers; AI listens and corrects
+      you to Èd you get hired faster.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-B-S
   name: Vocational Trade Manuals
-  category: Trade Skills
+  category: Social Fabric
   pitch: Expert technical guidance for every bòn banch.
   tier: standard
   status: Concept
@@ -1376,9 +2032,20 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Trade Skills
+  name_kr: Vocational Trade Manuals
+  pitch_kr: Expert technical guidance for every bòn banch.
+  logic_kr: High-quality safety and measurement checklists delivered via SMS to ensure
+    durable, safe constructio...
+  strategy_analysis_kr:
+    strengths: High-quality safety and measurement checklists delivered via SMS to
+      ensure durable, safe construction worksites.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-AVNI
   name: Career Pathfinder
-  category: Counseling / Job Search
+  category: Social Fabric
   pitch: Your roadmap from student to professional.
   tier: standard
   status: Concept
@@ -1399,9 +2066,20 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Counseling / Job Search
+  name_kr: Career Pathfinder
+  pitch_kr: Ou roadmap from Elèv to professional.
+  logic_kr: Matches talent to Lokal demand. Helps youth choose the right trade school
+    or apprenticeship based on...
+  strategy_analysis_kr:
+    strengths: Matches talent to Lokal demand. Helps youth choose the right trade
+      school or apprenticeship based on their interests.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-LEK-L
   name: Verified School Info System (E-Lekòl)
-  category: Academic Management
+  category: Social Fabric
   pitch: The principal's office, directly on the parent's phone.
   tier: standard
   status: Concept
@@ -1423,9 +2101,21 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Academic Management
+  name_kr: Verified School Info System (E-Lekòl)
+  pitch_kr: principal's office, directly on the parent's phone.
+  logic_kr: Sèvi ak **Sèk Verifye**, parents can checkleur child's grades, attendance,
+    and quarterly fees. Sc...
+  strategy_analysis_kr:
+    strengths: Sèvi ak **Sèk Verifye**, parents can checkleur child's grades, attendance,
+      and quarterly fees. Schools can broadcast "No School Today" alerts instantly
+      during weather or civic emergencies.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-ENSKRI
   name: Remote School Registration
-  category: Administrative / Civic
+  category: Social Fabric
   pitch: Skip the 4-hour queue—register your child from home.
   tier: standard
   status: Concept
@@ -1447,9 +2137,21 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Administrative / Civic
+  name_kr: Remote School Registration
+  pitch_kr: Skip the 4-hour queue—register your child from home.
+  logic_kr: Parents submit Nimerik photos of birth certificates and photos via WhatsApp.
+    Otomat verifies comple...
+  strategy_analysis_kr:
+    strengths: Parents submit Nimerik photos of birth certificates and photos via
+      WhatsApp. Otomat verifies completeness and assigns a "Registration ID," saving
+      parents from multiple trips to the school office.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-NOM
   name: Teacher Attendance Loop
-  category: Administration
+  category: Social Fabric
   pitch: Real-time transparency for rural schools.
   tier: standard
   status: Concept
@@ -1470,9 +2172,20 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Administration
+  name_kr: Pwofesè Attendance Loop
+  pitch_kr: An-Dirèk transparency for rural schools.
+  logic_kr: Teachers "clock in" via the **Sèk Verifye** with a location timestamp.
+    Bay accurate data for p...
+  strategy_analysis_kr:
+    strengths: Teachers "clock in" via the **Sèk Verifye** with a location timestamp.
+      Bay accurate data for payroll and ensures students have a Pwofesè present.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-PARAN
   name: Parent-Teacher Update
-  category: Communication
+  category: Social Fabric
   pitch: Keep parents in the loop, even without internet.
   tier: standard
   status: Concept
@@ -1493,11 +2206,22 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Communication
+  name_kr: Parent-Pwofesè Update
+  pitch_kr: Keep parents in the loop, even without internet.
+  logic_kr: Send high-priority alerts for school closings, grades, or behavior issues.
+    Improves the "educational...
+  strategy_analysis_kr:
+    strengths: Send high-priority alerts for school closings, grades, or behavior
+      issues. Improves the "educational triangle" between school, Pwofesè, and home.
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.
 - id: START-KONTE
   name: Literacy Voice Story
-  category: Literacy
+  category: Education & Jobs
   pitch: Interactive storytelling for early readers.
-  tier: premium
+  tier: elite
   status: Concept
   metrics:
     impact: 5
@@ -1517,3 +2241,15 @@
     limitations: Standard deployment constraints.
     growth_path: Scale via regional WhatsApp hubs.
     market_risk: User adoption speed.
+  original_category: Literacy
+  name_kr: Literacy Vwa Story
+  pitch_kr: Interactive storytelling for early readers.
+  logic_kr: 'Otomat sends a short Kreyòl audio story. At the end, it asks: "What color
+    was the cow''s hat?" Users...'
+  strategy_analysis_kr:
+    strengths: 'Otomat sends a short Kreyòl audio story. At the end, it asks: "What
+      color was the cow''s hat?" Users reply with Vwa or Tèks to build comprehension
+      skills.'
+    limitations: Kontrent deplwaman estanda.
+    growth_path: Elandil atravè sant WhatsApp rejyonal yo.
+    market_risk: Vitès adopsyon itilizatè.

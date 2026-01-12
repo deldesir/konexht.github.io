@@ -7,7 +7,7 @@ solution_id: "START-BEBE"
 
 <div class="max-w-4xl mx-auto py-20 px-6">
   <div class="mb-10">
-    <span class="text-emerald-600 font-bold tracking-widest uppercase text-xs">Maternal Health</span>
+    <span class="text-emerald-600 font-bold tracking-widest uppercase text-xs">Social Fabric</span>
     <h1 class="text-5xl font-black text-slate-900 mt-2 mb-6">Prenatal MomConnect</h1>
     <p class="text-2xl text-slate-500 leading-relaxed">Every pregnancy journey, guided by trust.</p>
   </div>
